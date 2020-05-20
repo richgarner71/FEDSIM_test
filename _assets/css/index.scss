@@ -2,7 +2,59 @@
 
 @import "uswds";
 
+/* FEDSIM COLORS */
+:root{
+  --fedsim-blue1: #1D5187;
+  --fedsim-blue2: #4B92CE;
+  --fedsim-blue3: #4D7999;
+  --fedsim-blue4: #90CBE4;
+  --fedsim-darkgrey: #424143;
+  --fedsim-litegrey: #B3B4B4;
+  --fedsim-purple: #570A3B;
+  --fedsim-pink: #AA839D;
+}
+
 // Add your SASS/CSS here
+
+//Header styles
+.usa-banner__inner {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+//Footer styles
+.footer_side_left, .footer_side_right{
+  color: var(--fedsim-blue1);
+}
+
+.absolute_bottom{
+  display: block;
+}
+
+//Callout styles
+.usa-hero{
+  background-image: asset_url("home.jpg");
+}
+
+.usa-hero__callout{
+  background-color: white;
+  border-radius: 12px;
+}
+
+.usa-hero__callout, .usa-hero__heading{
+  color: var(--fedsim-blue1);
+}
+
+.usa-hero__heading{
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 40em){
+  .usa-hero__callout{
+    min-width: 34rem;
+  }
+}
 
 // default mode hide banner
 .usa-banner__content {
