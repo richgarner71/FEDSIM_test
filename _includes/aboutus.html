@@ -1,0 +1,111 @@
+<div class="grid-container">
+<!-- first row -->
+    <div class="grid-row">
+<!-- left side, first row -->
+      <div class="tablet:grid-col infoblock" style="text-align: center;">
+        <h3 class="info-title">ABOUT FEDSIM</h3>
+        <p>FEDSIM is a Client Support Center within the General Services Administration's Office of Assisted Acquisition Services (AAS). FEDSIM is the leading provider of assisted acquisition services for federal agencies. Our services include acquisition, financial, and project management for the full acquisition life cycle.</p>
+        <p>Learn more about FEDSIM by visiting our <a href="https://en.wikipedia.org/wiki/Federal_Systems_Integration_and_Management_Center">Wikipedia page.</a></p>
+      </div>
+<!-- right side, first row -->
+      <div class="tablet:grid-col infoblock-dark" style="text-align: center;">
+
+        <div class="flex-wrapper">
+            <div class="half-block">
+                <h3>PROTEST WIN RATE</h3>
+                <div class="pie">99%</div>
+                <div class="pie-percentage">99%</div>
+
+            </div>
+            <div class="half-block">
+                <h3>Average time from IA to award</h3>
+                <h2>7</h2>
+                <h4>MONTHS</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+<!-- second row -->
+    <div class="grid-row">
+        <!-- left side, second row -->
+              <div class="tablet:grid-col infoblock-dark" style="text-align: center;">
+
+                <div class="flex-wrapper">
+                    <div class="half-block">
+                        <h3>Total value of active contract awards</h3>
+                        <h2>$55</h2>
+                        <h4>BILLION</h4>
+        
+                    </div>
+                    <div class="half-block">
+                        <h3>Annual contract obligations</h3>
+                        <h2>$6</h2>
+                        <h4>BILLION</h4>
+                    </div>
+                  </div>
+                </div>
+        <!-- right side, second row -->
+              <div class="tablet:grid-col infoblock" style="text-align: center;">
+
+                <h3 class="info-title">OUR MISSION</h3>
+                <p>To build innovative acquisition solutions that empower federal agencies.</p>
+                <h3 class="info-title">OUR VISION</h3>
+                <p>To transform the federal acquisition process.</p>
+              
+              </div>
+            </div>
+    
+  </div>
+
+  <script type="text/javascript">
+  function $$(selector, context) {
+    context = context || document;
+    var elements = context.querySelectorAll(selector);
+    return Array.prototype.slice.call(elements);
+    } 
+
+    function count(){
+        var isUsed = false;
+    $$('.pie').forEach(function(pie) {
+        var p = parseFloat(pie.textContent);
+
+        if(pie.maxValue == null){
+            pie.maxValue = p;
+            pie.incValue = p / 100.0;
+            pie.lastValue = 0;
+        }
+        else
+            pie.lastValue = pie.lastValue + pie.incValue;
+
+    if(pie.lastValue <= pie.maxValue){
+            var NS = "http://www.w3.org/2000/svg";
+            var svg = document.createElementNS(NS, "svg");
+            var circle = document.createElementNS(NS, "circle");
+            var title = document.createElementNS(NS, "title");
+
+            circle.setAttribute("r", 16);
+            circle.setAttribute("cx", 16);
+            circle.setAttribute("cy", 16);
+            circle.setAttribute("stroke-dasharray", pie.lastValue + " 100");
+
+            svg.setAttribute("viewBox", "0 0 32 32");
+            title.textContent = pie.textContent;
+            pie.textContent = '';
+            svg.appendChild(title);
+            svg.appendChild(circle);
+            pie.appendChild(svg);
+
+        isUsed = true;
+    }
+
+    });
+        if(isUsed)
+            window.setTimeout(function() {  count(); }, 30);
+    }
+
+    window.setTimeout(function() {  count(); }, 30);
+
+    count();
+
+</script>
+ 

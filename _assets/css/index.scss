@@ -35,7 +35,6 @@
 //Callout styles
 .usa-hero{
   background-image: asset_url("home.jpg");
-  height: 650px;
 }
 
 .usa-hero__callout{
@@ -56,6 +55,66 @@
     min-width: 34rem;
   }
 }
+
+//Blocks
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.infoblock{
+  color: var(--fedsim-blue1);
+  background-color: white;
+}
+
+.infoblock-dark{
+  color: white;
+  background-color: var(--fedsim-blue1);
+}
+
+.half-block {
+  width: 50%;
+  padding: 5px;
+  justify-content: space-around ;
+}
+
+.info-title{
+  color: var(--fedsim-blue2);
+}
+
+//About Us percentage circle
+.pie {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin: 10px;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+
+.pie-percentage{
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+}
+
+svg {
+	background: var(--fedsim-litegrey);
+	border-radius: 50%;
+}
+
+circle {
+	fill: var(--fedsim-litegrey);
+	stroke: var(--fedsim-blue2);
+	stroke-width: 32;
+}
+
+@keyframes grow { to { stroke-dasharray: 100 100 } }
+
+.pie.animated circle {
+	animation: grow 2s infinite linear;
+}
+
 
 // default mode hide banner
 .usa-banner__content {
