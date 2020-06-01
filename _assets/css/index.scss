@@ -24,6 +24,12 @@
 }
 
 //Footer styles
+hr.footer-border{
+  width: 100vw;
+  border-bottom: 3px solid var(--fedsim-lightgrey);
+  
+}
+
 .footer_side_left, .footer_side_right{
   color: var(--fedsim-blue1);
 }
@@ -62,6 +68,10 @@
   flex-flow: row nowrap;
 }
 
+.infoblock, .infoblock-dark{
+  padding: 10px;
+}
+
 .infoblock{
   color: var(--fedsim-blue1);
   background-color: white;
@@ -73,39 +83,64 @@
 }
 
 .half-block {
+  display: grid;
   width: 50%;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-around ;
 }
 
-.info-title{
+.block-title{
+  font-size: large;
   color: var(--fedsim-blue2);
 }
 
+.block-text-med, .block-text-big, .block-num-med, .block-num-big{
+  margin: 0;
+  font-weight: bold;
+}
+
+.block-text-med{
+  font-size: 1.2em;
+}
+
+.block-text-big{
+  font-size: 2em;
+}
+
+.block-num-med{
+  font-size: 6em;
+}
+
+.block-num-big{
+  font-size: 6.8em;
+}
+
+
 //About Us percentage circle
 .pie {
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	margin: 10px;
-  transform: rotate(-90deg);
+	width: 200px;
+	height: 200px;
+  display: inline-block;
   position: absolute;
+  transform: rotate(-90deg);
 }
 
 .pie-percentage{
+  width: 200px;
+  height: 200px;
   display: inline-block;
   position: absolute;
   z-index: 999;
 }
 
 svg {
-	background: var(--fedsim-litegrey);
+	background: var(--fedsim-blue1);
 	border-radius: 50%;
 }
 
 circle {
-	fill: var(--fedsim-litegrey);
-	stroke: var(--fedsim-blue2);
+	fill: var(--fedsim-blue1);
+	stroke: var(--fedsim-blue3);
 	stroke-width: 32;
 }
 
