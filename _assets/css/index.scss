@@ -103,7 +103,7 @@ hr.footer-border{
 }
 
 .fourth-block, .fourth-block-dark{
-  width: 25%;
+  width: 24%;
 }
 
 .fourth-block-dark{
@@ -141,10 +141,11 @@ hr.footer-border{
 
 hr.highlight-line, hr.highlight-line-sm{
   border-top: 5px solid var(--fedsim-blue1);
+  border-radius: 2px;
 }
 
 hr.highlight-line{
-  width: 230px;
+  width: 290px;
 }
 
 hr.highlight-line-sm{
