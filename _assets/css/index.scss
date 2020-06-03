@@ -2,6 +2,16 @@
 
 @import "uswds";
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNova-Regular.otf");
+}
+
+html{
+  font-family: "Proxima Nova", sans-serif;
+
+}
+
 /* FEDSIM COLORS */
 :root{
   --fedsim-blue1: #1D5187;
@@ -18,8 +28,8 @@
 h2{
   color: var(--fedsim-blue1);
   font-size: 2em;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 //Header styles
