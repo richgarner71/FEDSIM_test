@@ -57,6 +57,7 @@ hr.footer-border{
 //Callout styles
 .usa-hero{
   background-image: asset_url("home.jpg");
+  height: 500px;
 }
 
 .usa-hero__callout{
@@ -69,7 +70,8 @@ hr.footer-border{
 }
 
 .usa-hero__heading{
-  font-size: 1.4rem;
+  font-family: "Garamond";
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 40em){
@@ -82,10 +84,6 @@ hr.footer-border{
 .flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
-}
-
-.infoblock, .infoblock-dark{
-  padding: 10px;
 }
 
 .infoblock{
@@ -106,6 +104,14 @@ hr.footer-border{
 
 .half-block{
   width: 50%;
+}
+
+.on-left{
+  border-right: solid white 3px;
+}
+
+.on-right{
+  border-left: solid white 3px;
 }
 
 .third-block{
