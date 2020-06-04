@@ -165,7 +165,6 @@ hr.highlight-line-sm{
 	width: 200px;
 	height: 200px;
   display: inline-block;
-  position: absolute;
   transform: rotate(-90deg);
 }
 
@@ -175,6 +174,7 @@ hr.highlight-line-sm{
   display: inline-block;
   position: absolute;
   z-index: 999;
+  margin: 10px;
 }
 
 svg {
