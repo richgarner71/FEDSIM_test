@@ -3,7 +3,8 @@
 @import "uswds";
 
 html{
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 /* FEDSIM COLORS */
@@ -21,7 +22,13 @@ html{
 // Add your SASS/CSS here
 h2{
   color: var(--fedsim-blue1);
-  font-size: 1.8em;
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 400px){
+  h2{
+    font-size: 1.2em;
+  }
 }
 
 //Header styles
@@ -140,11 +147,29 @@ hr.footer-border{
 }
 
 .block-num-med{
-  font-size: 6em;
+  font-size: 5em;
 }
 
 .block-num-big{
-  font-size: 7em;
+  font-size: 6em;
+}
+
+@media screen and (max-width: 400px){
+  .block-text-med{
+    font-size: 0.8em;
+  }
+  
+  .block-text-big{
+    font-size: 1em;
+  }
+  
+  .block-num-med{
+    font-size: 2em;
+  }
+  
+  .block-num-big{
+    font-size: 3em;
+  }
 }
 
 hr.highlight-line, hr.highlight-line-sm{
