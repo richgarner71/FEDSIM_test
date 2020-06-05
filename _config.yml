@@ -75,7 +75,7 @@ primary_navigation:
       - name: About Us
         url: /aboutus/
       - name: Our Leadership
-        url: "#main-content"
+        url: /leadership/
   - name: Our Work
     url: /document/
     children:
@@ -191,4 +191,5 @@ assets:
     - node_modules/uswds/dist/scss
     - node_modules/netlify-cms/dist
     - _assets/images
+    - _assets/images/members
     - _assets/fonts

@@ -17,6 +17,7 @@ html{
   --fedsim-litegrey: #B3B4B4;
   --fedsim-purple: #570A3B;
   --fedsim-pink: #AA839D;
+  --fedsim-gold: #a38e4a;
 }
 
 // Add your SASS/CSS here
@@ -29,6 +30,15 @@ h2{
   h2{
     font-size: 1.2em;
   }
+}
+
+.grid-row{
+  width: 100vw;
+}
+
+.v-buffer{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 //Header styles
@@ -85,12 +95,16 @@ hr.footer-border{
   flex-flow: row nowrap;
 }
 
+.infoblock, .darkblock{
+  text-align: center;
+}
+
 .infoblock{
   color: var(--fedsim-blue1);
   background-color: white;
 }
 
-.infoblock-dark, .fourth-block-dark{
+.darkblock{
   color: white;
   background-color: var(--fedsim-blue1);
 }
@@ -117,13 +131,10 @@ hr.footer-border{
   width: 33%;
 }
 
-.fourth-block, .fourth-block-dark{
+.fourth-block{
   width: 24%;
-}
-
-.fourth-block-dark{
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
   text-align: center;
   padding-bottom: 16px;
 }
@@ -217,6 +228,97 @@ circle {
 
 .pie.animated circle {
 	animation: grow 2s infinite linear;
+}
+
+
+//Members and leadership
+
+.allcaps{
+  text-transform: uppercase;
+}
+
+.bio-spacer{
+  width: 20px;
+  background-color: white;
+}
+
+.memberblock{
+  background-color: var(--fedsim-litegrey);
+  color: var(--fedsim-darkgrey);
+  font-size: 0.8em;
+  font-weight: 600;
+  width: 160px;
+  height: 220px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.memberblock p{
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.member-pic{
+  height: 140px;
+  width: 140px;
+}
+
+.sectorbar{
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  color: white;
+  background-color: var(--fedsim-blue1);
+  padding: 10px;
+}
+
+.sectorbar h3{
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sectorblock{
+  background-color: var(--fedsim-litegrey);
+  width: 320px;
+  height: 280px;
+  display: inline-table;
+}
+
+.blankblock{
+  background-color: white;
+}
+
+.sector-1{
+  background-color: var(--fedsim-pink);
+}
+
+.sector-2{
+  background-color: var(--fedsim-blue1);
+}
+
+.sector-3{
+  background-color: var(--fedsim-purple);
+}
+
+.sector-4{
+  background-color: var(--fedsim-gold);
+}
+
+.sector-5{
+  background-color: var(--fedsim-darkgrey);
+}
+
+.sector-6{
+  background-color: var(--fedsim-blue3);
+}
+
+.sector-7{
+  background-color: var(--fedsim-litegrey);
 }
 
 
