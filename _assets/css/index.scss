@@ -32,8 +32,9 @@ h2{
   }
 }
 
-.grid-row{
+.grid-row-framed{
   width: 100vw;
+  display: flex;
 }
 
 .v-buffer{
@@ -41,11 +42,16 @@ h2{
   padding-bottom: 10px;
 }
 
+
 //Header styles
 .usa-banner__inner {
   display: block;
   align-items: center;
   text-align: center;
+}
+
+.usa-navbar{
+  height: 5rem;
 }
 
 //Footer styles
@@ -109,7 +115,7 @@ hr.footer-border{
   background-color: var(--fedsim-blue1);
 }
 
-.half-block, .third-block, .fourth-block {
+.half-block {
   display: grid;
   padding: 10px;
   justify-content: space-around ;
@@ -128,10 +134,13 @@ hr.footer-border{
 }
 
 .third-block{
+  display: block;
   width: 33%;
+  text-align: center;
 }
 
 .fourth-block{
+  display: block;
   width: 24%;
   margin-left: 4px;
   margin-right: 4px;
@@ -165,6 +174,24 @@ hr.footer-border{
   font-size: 6em;
 }
 
+@media screen and (max-width: 800px){
+  .block-text-med{
+    font-size: 1em;
+  }
+  
+  .block-text-big{
+    font-size: 1.6em;
+  }
+  
+  .block-num-med{
+    font-size: 3em;
+  }
+  
+  .block-num-big{
+    font-size: 4em;
+  }
+}
+
 @media screen and (max-width: 400px){
   .block-text-med{
     font-size: 0.8em;
@@ -188,14 +215,6 @@ hr.highlight-line, hr.highlight-line-sm{
   border-radius: 2px;
 }
 
-hr.highlight-line{
-  width: 290px;
-}
-
-hr.highlight-line-sm{
-  width: 220px;
-}
-
 //About Us percentage circle
 .pie {
 	width: 200px;
@@ -211,6 +230,19 @@ hr.highlight-line-sm{
   position: absolute;
   z-index: 999;
   margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .pie-percentage{
+    width: 160px;
+    height: 160px;
+    margin: 8px;
+  }
 }
 
 svg {
@@ -289,8 +321,68 @@ circle {
   display: inline-table;
 }
 
+@media screen and (max-width: 800px) {
+  .bio-spacer{
+    width: 20px;
+  }
+  
+  .memberblock{
+    font-size: 0.7em;
+    width: 120px;
+    height: 184px;
+  }
+  
+  .memberblock p{
+    margin-top: 4px;
+  }
+  
+  .member-pic{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .sectorbar{
+    width: 220px;
+    height: 40px;
+  }
+  
+  .sectorbar h3{
+    font-size: 1.1em;
+  }
+  
+  .sectorblock{
+    width: 238px;
+    height: 244px;
+  }
+
+  .linebox{
+    width: 2px !important;
+  }
+
+  .wordbox{
+    width: 107px;
+    font-size: 0.8em;
+  }
+}
+
 .blankblock{
   background-color: white;
+}
+
+.wordbox{
+  display: grid;
+  width: 110px;
+  padding: 2px;
+  text-align: center;
+}
+
+.linebox{
+  display: block;
+  width: 38px;
+}
+
+hr.small-line{
+  border-top: 3px solid var(--fedsim-blue1);
 }
 
 .sector-1{
@@ -334,18 +426,12 @@ circle {
   .tablet\:float-left {
     float: left;
   }
-}
-
-@media screen and (min-width: 640px) {
   .paginate-link {
     display: initial;
   }
   .paginate-button {
     display: none;
   }
-}
-
-@media screen and (max-width: 640px) {
   .paginate-link {
     display: none;
   }
