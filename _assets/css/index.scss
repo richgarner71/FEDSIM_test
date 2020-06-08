@@ -270,7 +270,12 @@ circle {
 }
 
 .bio-spacer{
-  width: 20px;
+  width: 16px;
+  background-color: white;
+}
+
+.bio-spacer-big{
+  width: 65px;
   background-color: white;
 }
 
@@ -279,9 +284,9 @@ circle {
   color: var(--fedsim-darkgrey);
   font-size: 0.8em;
   font-weight: 600;
-  width: 160px;
+  width: 150px;
   height: 220px;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
   vertical-align: top;
   display: inline-block;
@@ -298,7 +303,7 @@ circle {
 }
 
 .sectorbar{
-  width: 300px;
+  width: 282px;
   height: 40px;
   margin: 10px;
   color: white;
@@ -315,58 +320,20 @@ circle {
 }
 
 .sectorblock{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   background-color: var(--fedsim-litegrey);
-  width: 320px;
+  border: 4px solid var(--fedsim-litegrey);
   height: 280px;
+  padding: 2px;
   display: inline-table;
-}
-
-@media screen and (max-width: 800px) {
-  .bio-spacer{
-    width: 20px;
-  }
-  
-  .memberblock{
-    font-size: 0.7em;
-    width: 120px;
-    height: 184px;
-  }
-  
-  .memberblock p{
-    margin-top: 4px;
-  }
-  
-  .member-pic{
-    height: 100px;
-    width: 100px;
-  }
-  
-  .sectorbar{
-    width: 220px;
-    height: 40px;
-  }
-  
-  .sectorbar h3{
-    font-size: 1.1em;
-  }
-  
-  .sectorblock{
-    width: 238px;
-    height: 244px;
-  }
-
-  .linebox{
-    width: 2px !important;
-  }
-
-  .wordbox{
-    width: 107px;
-    font-size: 0.8em;
-  }
 }
 
 .blankblock{
   background-color: white;
+  width: 312px;
+  margin: 1px;
 }
 
 .wordbox{
@@ -378,8 +345,68 @@ circle {
 
 .linebox{
   display: block;
-  width: 38px;
+  width: 34px;
 }
+
+@media screen and (max-width: 768px) {
+  .bio-spacer, .bio-spacer-big{
+    width: 2px;
+  }
+
+  .memberblock{
+    font-size: 0.7em;
+    width: 108px;
+    height: 184px;
+  }
+  
+  .memberblock p{
+    margin-top: 1px;
+  }
+  
+  .member-pic{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .sectorbar{
+    width: 190px;
+    height: 40px;
+  }
+  
+  .sectorbar h3{
+    font-size: 1.1em;
+  }
+  
+  .sectorblock{
+    height: 220px;
+    padding: 0; 
+  }
+
+  .blankblock{
+    width: 216px;
+  }
+
+  .sectorblock .memberblock{
+    padding: 2px;
+    width: 105px;
+    height: 150px;
+  }
+
+  .linebox{
+    width: 2px !important;
+  }
+
+  .wordbox{
+    width: 92px;
+    font-size: 0.8em;
+  }
+
+  .v-buffer{
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+}
+
 
 hr.small-line{
   border-top: 3px solid var(--fedsim-blue1);
@@ -412,7 +439,6 @@ hr.small-line{
 .sector-7{
   background-color: var(--fedsim-litegrey);
 }
-
 
 // default mode hide banner
 .usa-banner__content {
