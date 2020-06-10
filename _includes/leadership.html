@@ -4,7 +4,7 @@
     <p>FEDSIM is divided into seven sectors: Civilian, Air Force, Department of Defense, Army, Navy, GCC and Innovation. Each sector understands the speicialized circumstances and regulations applicable to the four groups. This specialization helps deliver value to these clients agencies.</p>
         <div class="grid-row-framed v-buffer">
            <div class="flex-wrapper" style="border: 2px solid var(--fedsim-litegrey)">
-            <div class="memberblock">
+            <div class="memberblock" onclick="javascript:openBio('some text here');">
                 {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
                 <br>
                 <p class="allcaps">Chris Bennethum</p>
@@ -260,6 +260,20 @@
     </div>
 </div>
 
+<div id="bioPopup" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
+            <br>
+            <p class="allcaps">Chris Bennethum</p>
+            <p>Acting Assistant <br>Commissioner, AAS</p>
+        
+            <br>
+            <p>Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript">
 
     function findBox(box)
@@ -272,6 +286,16 @@
     {
         var thatBox = document.getElementById(boxx);
         thatBox.style.borderColor = "var(--fedsim-litegrey)";
+    }
+
+    function openBio(memberInfo)
+    {
+        document.getElementById('bioPopup').setAttribute("aria-hidden", "false");
+    }
+
+    function closeBio()
+    {
+        document.getElementById('bioPopup').setAttribute("aria-hidden", "true");
     }
 
 </script>
