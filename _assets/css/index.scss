@@ -26,9 +26,17 @@ h2{
   font-size: 1.6em;
 }
 
+h3{
+  color: var(--fedsim-blue2);
+  font-size: 1.4em;
+}
+
 @media screen and (max-width: 400px){
   h2{
     font-size: 1.2em;
+  }
+  h3{
+    font-size: 1em;
   }
 }
 
@@ -101,6 +109,30 @@ hr.footer-border{
   flex-flow: row nowrap;
 }
 
+.flex-wrapper-big{
+  width: 1000px;
+  margin: auto;
+  display: flex;
+}
+
+@media screen and (max-width: 768px){
+  .flex-wrapper-big{
+    width: 740px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .flex-wrapper-big{
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 411px){
+  .flex-wrapper-big{
+    width: 360px;
+  }
+}
+
 .infoblock, .darkblock{
   text-align: center;
 }
@@ -112,6 +144,18 @@ hr.footer-border{
 .infoblock, .modalblock{
   color: var(--fedsim-blue1);
   background-color: white;
+}
+
+.block-header{
+  padding: 10px;
+  background-color: var(--fedsim-blue1);
+  color: white;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.withborder{
+  border: solid 2px var(--fedsim-blue1);
 }
 
 .darkblock{
@@ -127,6 +171,64 @@ hr.footer-border{
 
 .half-block{
   width: 50%;
+}
+
+.learnblock{
+  width: 480px;
+  height: 200px;
+  margin: 20px;
+  display: block;
+  text-align: center;
+}
+
+.learnblock ol, .learnblock ul{
+  width: 50%;
+  text-align: left;
+  margin: auto;
+}
+
+.learnblock p{
+  margin-block-start: 0.75em;
+}
+
+.learn-gov{
+  background-image: asset-url("cso1.png");
+  background-color: var(--fedsim-blue1);
+}
+
+.learn-ind{
+  background-image: asset-url("cso2.png");
+  background-color: var(--fedsim-darkgrey);
+}
+
+.stack-top{
+  z-index: 9;
+  position: absolute;
+  opacity: 0;
+  padding: 0 10px;
+  background-color: var(--fedsim-litegrey);
+  border: solid 2px var(--fedsim-darkgrey);
+  font-size: 1.1em;
+}
+
+.stack-top:hover{
+  opacity: 100%;
+}
+
+.stack-top h2{
+  color: var(--fedsim-darkgrey);
+}
+
+.action-button-bar{
+  display: block;
+  width: 500px;
+  padding: 20px;
+  background-color: var(--fedsim-blue1);
+  color: white;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
 }
 
 .on-left{

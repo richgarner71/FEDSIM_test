@@ -79,10 +79,10 @@ primary_navigation:
   - name: Our Work
     url: /document/
     children:
+      - name: Our Work
+        url: /document/
       - name: CSO
-        url: "#main-content"
-      - name: SIBR
-        url: "#main-content"
+        url: /cso/
   - name: Careers
     url: /document/
   - name: Getting Started
