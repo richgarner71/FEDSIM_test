@@ -30,6 +30,11 @@ h3{
   font-size: 1.4em;
 }
 
+h4{
+  font-size: 1.4em;
+  color: var(--fedsim-blue2);
+}
+
 @media screen and (max-width: 400px){
   h2{
     font-size: 1.2em;
@@ -251,11 +256,6 @@ hr.footer-border{
   margin-right: 4px;
   text-align: center;
   padding-bottom: 16px;
-}
-
-.block-title{
-  font-size: large;
-  color: var(--fedsim-blue2);
 }
 
 .block-text-med, .block-text-big, .block-num-med, .block-num-big{
