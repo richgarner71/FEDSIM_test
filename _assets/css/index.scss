@@ -45,8 +45,12 @@ h5{
   h2{
     font-size: 1.2em;
   }
-  h3{
+  h3, h4{
     font-size: 1em;
+  }
+  
+  h5{
+    font-size: 0.8em;
   }
 }
 
@@ -108,8 +112,12 @@ h5{
 //Footer styles
 hr.footer-border{
   width: 100vw;
-  border-bottom: 3px solid var(--fedsim-lightgrey);
-  
+  border-top: 5px solid var(--fedsim-lightgrey);
+  margin-top: 0;
+}
+
+.usa-footer{
+  line-height: 1.4rem;
 }
 
 .footer_side_left, .footer_side_right{
@@ -128,7 +136,9 @@ hr.footer-border{
 
 .usa-hero__callout{
   background-color: white;
-  border-radius: 12px;
+  border-radius: 15px;
+  padding: 1rem 1rem 0.4rem 1rem;
+  margin-left: 60px;
 }
 
 .usa-hero__callout, .usa-hero__heading{
@@ -187,6 +197,7 @@ hr.footer-border{
 .infoblock, .modalblock{
   color: var(--fedsim-blue1);
   background-color: white;
+  margin: auto;
 }
 
 .block-header{
