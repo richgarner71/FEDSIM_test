@@ -4,13 +4,13 @@
     <p>FEDSIM is divided into seven sectors: Civilian, Air Force, Department of Defense, Army, Navy, GCC and Innovation. Each sector understands the speicialized circumstances and regulations applicable to their sectors. This specialization helps deliver value to these clients agencies.</p>
         <div class="grid-row-framed v-buffer">
            <div class="flex-wrapper" style="border: 2px solid var(--fedsim-litegrey)">
-            <div class="memberblock" onclick="javascript:openBio('some text here');">
+            <div class="memberblock" onclick="javascript:openBio('bioPopup_CB');">
                 {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
                 <br>
                 <p class="allcaps">Chris Bennethum</p>
                 <p>Acting Assistant <br>Commissioner, AAS</p>
             </div>
-            <div class="memberblock">
+            <div class="memberblock" onclick="javascript:openBio('bioPopup_CH');">
                 {% asset Chris-Hamm.png class="member-pic" alt="Chris Hamm" %}
                 <br>
                 <p class="allcaps">Chris Hamm</p>
@@ -19,25 +19,25 @@
            </div>
            <div class="bio-spacer-big"></div>
            <div class="flex-wrapper" style="border: 2px solid var(--fedsim-litegrey)">
-            <div class="memberblock">
+            <div class="memberblock" onclick="javascript:openBio('bioPopup_MA');">
                 {% asset MA_pic.png class="member-pic" alt="Mark Aucello" %}
                 <br>
                 <p class="allcaps">Mark Aucello</p>
                 <p>Director, FEDSIM</p>
             </div>
-            <div class="memberblock">
+            <div class="memberblock" onclick="javascript:openBio('bioPopup_PB');">
                 {% asset Pete-Burr.png class="member-pic" alt="Pete Burr" %}
                 <br>
                 <p class="allcaps">Pete Burr</p>
                 <p>Director, FEDSIM</p>
             </div>
-            <div class="memberblock">
+            <div class="memberblock" onclick="javascript:openBio('bioPopup_EC');">
                 {% asset Erin-Childs.png class="member-pic" alt="Erin Childs" %}
                 <br>
                 <p class="allcaps">Erin Childs</p>
                 <p>Director, FEDSIM</p>
             </div>
-            <div class="memberblock">
+            <div class="memberblock" onclick="javascript:openBio('bioPopup_CN');">
                 {% asset Corey-Nickens.png class="member-pic" alt="Corey Nickens" %}
                 <br>
                 <p class="allcaps">Corey Nickens</p>
@@ -260,16 +260,310 @@
     </div>
 </div>
 
-<div id="bioPopup" class="dialog-overlay" aria-hidden="true">
+<!-- CB popup -->
+<div id="bioPopup_CB" class="dialog-overlay" aria-hidden="true">
     <div class="dialog" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock">
-            {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
-            <br>
-            <p class="allcaps">Chris Bennethum</p>
-            <p>Acting Assistant <br>Commissioner, AAS</p>
-        
-            <br>
-            <p>Click anywhere on this box to close.</p>
+            <div class="flex-wrapper">
+                {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Chris Bennethum</p>
+                        <p>Acting Assistant Commissioner, AAS</p>
+                    </span>
+                </div>
+            </div>
+            <p>Chris Bennethum is the Deputy Assistant Commissioner for GSA’s Assisted Acquisition
+                Services (AAS) organization in the Federal Acquisition Service. Chris oversees the AAS
+                Portfolio’s business strategy and operations, systems development, acquisition policy, financial
+                management and workforce recruitment, development and engagement.
+                <br>
+                Chris has served in numerous roles over his 25 years of service with various GSA components
+                in several regional, central office and overseas locations. Some of his previous roles include
+                serving as FAS Chief of Staff, Deputy Regional Commissioner for the National Capital Region,
+                Director for GSA’s Travel and Transportation Northeast Zone, and Director for Marketing and
+                Business Development in GSA’s European office.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CH popup -->
+<div id="bioPopup_CH" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Chris-Hamm.png class="member-pic" alt="Chris Hamm" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Chris Hamm</p>
+                        <p>FEDSIM Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Chris Hamm is the Director of FEDSIM. Chris leverages 17 years of experience in managing
+                complex acquisitions and project delivery to provide innovative solutions for FEDSIM clients.
+                Chris also serves as GSA’s Acquisition Innovation Advocate and was recognized as one of the
+                “FED100” by Federal Computer Week. He serves on the Executive Committee of ACT and the
+                advisory council of AFCEA. He is also a board member of AFFIRM.
+                <br>
+                Chris received his master’s degree from the University of North Carolina at Charlotte. Prior to
+                his time in acquisition management, Chris was inducted into the Presidential Management
+                Internship Program.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- MA popup -->
+<div id="bioPopup_MA" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset MA-pic.png class="member-pic" alt="Mark Aucello" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Mark D. Aucello</p>
+                        <p>Director of Regional Outreach</p>
+                    </span>
+                </div>
+            </div>
+            <p>Mark Aucello is FEDSIM&#39;s Director of Regional Outreach. He routinely interacts with the AAS
+                PMO, Regional CSCs, Customer Accounts &amp; Stakeholder Engagement Directors, and Regional
+                Commissioners to resolve issues, coordinate interactions, and establish better lines of
+                communication with FEDSIM. He also works with FEDSIM&#39;s senior management team on the
+                analysis of the portfolio.
+                <br>
+                Prior to FEDSIM, Mark was the Mid-Atlantic Region&#39;s (R3) AAS Director for over 19 years. His
+                experience also includes positions as the CIO of a startup biomedical company, the Technical
+                Director of a business process improvement/re-engineering effort for the Defense Logistics
+                Agency’s Medical Directorate, and as a Systems Analyst for the Navy’s Foreign Military Sales
+                Program.
+                <br>
+                Mark holds an M.B.A. from LaSalle University, an M.A. in International Relations/Business from
+                the University of Pennsylvania, and a B.A from Villanova University.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PB popup -->
+<div id="bioPopup_PB" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Pete-Burr.png class="member-pic" alt="Pete Burr" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Pete Burr</p>
+                        <p>FEDSIM Deputy Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>As the Deputy Director of FEDSIM, Pete Burr manages the daily operations of the organization.
+                Pete ensures that each FEDSIM client receives continuous high-quality acquisition and program
+                management support across the life cycle of each contract. Pete brings nearly 30 years of
+                government and industry acquisition and program management experience to FEDSIM.
+                <br>
+                In his previous role at FEDSIM, Pete led the FEDSIM Civilian Sector supporting civilian federal
+                agencies in the acquisition and management of information technology and professional service
+                solutions. He brings additional expertise in these areas gained from positions held at the
+                Department of Health and Human Services and NASA’s Goddard Space Flight Center.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- EC popup -->
+<div id="bioPopup_EC" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Erin-Childs.png class="member-pic" alt="Erin Childs" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Erin Childs</p>
+                        <p>PMO Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Erin Childs serves as the Director of the Program Management Office for FEDSIM. Erin directs
+                all management and program decisions to deliver innovative, mission-focused results for
+                FEDSIM clients. Erin develops internal human capital strategies and initiatives, manages the
+                financial health of the organization, and ensures quality acquisition processes and practices.
+                She has over eight years of experience in project management, human capital, facilitation, and
+                process improvement.
+                <br>
+                In her prior role at FEDSIM, she created and implemented FEDSIM University, a competency-
+                based learning and development program. Erin holds a Master of Business Administration from
+                George Washington University.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CN popup -->
+<div id="bioPopup_EC" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Corey-Nickens.png class="member-pic" alt="Corey Nickens" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Corey Nickens</p>
+                        <p>APM Group Manager</p>
+                    </span>
+                </div>
+            </div>
+            <p>Corey Nickens joined the Federal Government in 2004 to work for the General Services
+                Administration. Besides a brief stay at the Treasury Department, he has spent most of his
+                career at GSA supporting DoD and Civilian agencies, spanning IT and professional services
+                requirements including warfighter, agriculture, finance, energy, education, and housing
+                domains.
+                <br>
+                Corey currently serves as the Group Manager for FEDSIM’s Acquisition Project Managers (pre-
+                award). Corey is a member of various professional organizations seeking to maximize
+                collaboration and success among the public and private sectors, including the American Council
+                for Technology and Industry Advisory Council (ACT-IAC), the Armed Forces Communications
+                and Electronics Association (AFCEA), and the National Contract Management Association
+                (NCMA). He has participated in and held leadership roles in ACT-IAC’s professional
+                development programs as well as the Executive Leadership Conference (ELC). He was a
+                recipient of the inaugural Federal Computer Week (FCW) Rising Star award.
+                <br>
+                Corey earned a master’s degree in Library and Information Science from Drexel University and
+                a bachelor’s degree in Information Systems from the University of Maryland Baltimore County
+                (UMBC).</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- KK popup -->
+<div id="bioPopup_KK" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Kristen-Knapper.png class="member-pic" alt="Kristen Napper" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Kristen Knapper</p>
+                        <p>Civilian Sector Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Kristen Knapper serves as the Civilian Sector Director, overseeing acquisition support services
+                for FEDSIM’s federal civilian departments and agencies.
+                In her previous role at FEDSIM, Kristen served as a Civilian Group and Air Force Group
+                Manager and managed several portfolios, including the United States Department of Homeland
+                Security, US Air Force Joint Strike Fighter PMO, US Air Force Modeling and Simulation Agency,
+                Office of Management and Budget, General Services Administration (GSA), and Financial
+                Deposit Insurance Corporation (FDIC).
+                <br>
+                Kristen began her federal career in 1989 as a supply intern at the Department of the Army,
+                assigned to the Information Systems Management Activity (ISMA) at Fort Monmouth, New
+                Jersey. She has since served in several logistics and project management positions within the
+                Department of the Army and GSA, including seven years as team lead for the Pentagon
+                Consolidated Technical Control Facility and the Network Systems Management Center.
+                <br>
+                Kristen received her bachelor’s degree in business logistics from the Pennsylvania State
+                University and a graduate certificate in project management from the George Washington
+                University.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- KE popup -->
+<div id="bioPopup_KE" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Ken-Evans.png class="member-pic" alt="Ken Evans" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Ken Evans</p>
+                        <p>DOD?Air Force Sector Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Ken Evans is the Director of FEDSIM’s DoD/Air Force Sector. Ken oversees the procurement
+                and management of task orders supporting over 45 DoD organizations, including Joint
+                Improvised Threat Defeat Organization (JIDO), U.S. Central Command, Army Human Resource
+                Command, Joint Strike Fighter, and the NAVAIR Rapid Response Program Office.
+                <br>
+                Prior to joining FEDSIM, Ken worked for SAIC providing program management support to U.S.
+                Navy Space and Naval Warfare Command. Ken is certified as a Project Management
+                Professional (PMP) by the Project Management Institute (PMI).</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- MM popup -->
+<div id="bioPopup_KK" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Mike-M.png class="member-pic" alt="Mike Marquez" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Mike Marquez</p>
+                        <p>Army/Navy Sector Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Mike Marquez serves as the Director for the Army/Navy Sector. Mike oversees the procurement
+                and management of contracts and task orders supporting the U.S. Army and U.S. Navy. He also
+                supports Combatant Commands including AFRICOM, EUCOM, PACOM, and SOUTHCOM.
+                Prior to joining FEDSIM, Mike was the Chief of the Contracting Office and Business Operations
+                for the Supervisor of Shipbuilding, Conversion, and Repair in Groton, Connecticut for the U.S.
+                Navy. He administered the contracts for the VIRGINIA Class and OHIO-Replacement
+                submarines. Mike transferred to Groton from the Naval Sea Systems Command at the
+                Washington Navy Yard where he served as a Procuring Contracting Officer for the Advanced
+                Surface and Undersea Systems Capabilities Programs.
+                <br>
+                Mike earned his bachelor’s degree in computer science from the University of San Diego and a
+                Master’s of Business Administration with an emphasis on acquisition and contract management
+                from the Naval Postgraduate School. Mike also attended the Joint Forces Staff College and the
+                Harvard Kennedy School of Government as a senior executive fellow.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
+        </div>
+    </div>
+</div>
+
+<!-- JP popup -->
+<div id="bioPopup_KK" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset JP_pic2020.png class="member-pic" alt="Jim Piché" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Jim Piché</p>
+                        <p>Homeland Sector Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Jim Piché is FEDSIM&#39;s Homeland Sector Director. He has overall responsibility for FEDSIM&#39;s
+                Information Technology, Cybersecurity, and Professional Services Projects at the Department of
+                Homeland Security (DHS) and its component agencies. Most notably, he is responsible for the
+                FEDSIM and DHS partnership for Continuous Diagnostics and Mitigation (CDM) as a means to
+                acquire state-of-the-art cybersecurity tools and services for government networks.
+                Mr. Piché&#39;s sector also provides acquisition, project, and financial management for DHS&#39; Secure
+                Enterprise Network Systems, Services, &amp; Support (SENS3), the Saint Elizabeths Technology
+                Services (SETS), and the U.S. Border Patrol’s Acquisition, Program Management, and
+                Technology Solutions (APMTS) projects.
+                <br>
+                Mr. Piché&#39;s career spans over 20 years in major systems acquisitions and program
+                management, including assignments with the U.S. Coast Guard, U.S. Army PEO EIS,
+                Department of State, U.S. Mint, NAVSEA, and SPAWAR. Prior to his assignment at FEDSIM,
+                Mr. Piché was the Customer Service Director for Navy Enterprise Business Solutions
+                (NAVEBS), providing customer advocacy, communication, education, and incident response to
+                64,000 Navy ERP (SAP) users across six Major System Commands.
+                <br>
+                Mr. Piché holds a Bachelor of Science degree in Naval Architecture and Marine Engineering
+                from the U.S. Coast Guard Academy.</p>
+            <p style="font-style: italic;">Click anywhere on this box to close.</p>
         </div>
     </div>
 </div>
@@ -290,12 +584,15 @@
 
     function openBio(memberInfo)
     {
-        document.getElementById('bioPopup').setAttribute("aria-hidden", "false");
+        document.getElementById(memberInfo).setAttribute("aria-hidden", "false");
     }
 
     function closeBio()
     {
-        document.getElementById('bioPopup').setAttribute("aria-hidden", "true");
+        var elements = document.getElementsByClassName("dialog-overlay");
+        for (var i = 0; i < elements.length; i++){
+            elements[i].setAttribute("aria-hidden", "true");
+        }
     }
 
 </script>
