@@ -108,7 +108,7 @@
         <div class="grid-row-framed v-buffer">
             <div class="flex-wrapper">
                 <div id="sect-1-box" class="sectorblock">   <!-- CIVILIAN block ---------------------------------->
-                    <div class="memberblock">
+                    <div class="memberblock" onclick="javascript:openBio('bioPopup_KK');">
                         {% asset Kristen-Knapper.png class="member-pic" alt="Kristen Knapper" %}
                         <br>
                         <p class="allcaps">Kristen Knapper</p>
@@ -128,7 +128,7 @@
                 <div class="bio-spacer"></div>
                 
                 <div id="sect-2-box" class="sectorblock">   <!-- AIR FORCE block ---------------------------------->
-                    <div class="memberblock">
+                    <div class="memberblock" onclick="javascript:openBio('bioPopup_KE');">
                         {% asset Ken-Evans.png class="member-pic" alt="Ken Evans" %}
                         <br>
                         <p class="allcaps">Ken Evans</p>
@@ -148,7 +148,7 @@
                 <div class="bio-spacer"></div>
                 
                 <div id="sect-3-box" class="sectorblock">    <!-- DOD block ---------------------------------->
-                    <div  class="memberblock">   
+                    <div  class="memberblock" onclick="javascript:openBio('bioPopup_KE');">   
                         {% asset Ken-Evans.png class="member-pic" alt="Ken Evans" %}
                         <br>
                         <p class="allcaps">Ken Evans</p>
@@ -170,7 +170,7 @@
         <div class="grid-row-framed v-buffer">
             <div class="flex-wrapper">
                 <div id="sect-4-box" class="sectorblock">   <!-- ARMY block ---------------------------------->
-                    <div class="memberblock">
+                    <div class="memberblock" onclick="javascript:openBio('bioPopup_MM');">
                         {% asset Mike-M.png class="member-pic" alt="Mike Marquez" %}
                         <br>
                         <p class="allcaps">Mike Marquez</p>
@@ -190,7 +190,7 @@
                 <div class="bio-spacer"></div>
                 
                 <div id="sect-5-box" class="sectorblock">   <!-- NAVY block ---------------------------------->
-                    <div class="memberblock">
+                    <div class="memberblock" onclick="javascript:openBio('bioPopup_MM');">
                         {% asset Mike-M.png class="member-pic" alt="Mike Marquez" %}
                         <br>
                         <p class="allcaps">Mike Marquez</p>
@@ -210,7 +210,7 @@
                 <div class="bio-spacer"></div>
                 
                 <div id="sect-6-box" class="sectorblock">   <!-- GCC block ---------------------------------->
-                    <div class="memberblock">
+                    <div class="memberblock" onclick="javascript:openBio('bioPopup_JP');">
                         {% asset JP_pic2020.png class="member-pic" alt="Jim Piché" %}
                         <br>
                         <p class="allcaps">Jim Piché</p>
@@ -236,7 +236,7 @@
             <div class="bio-spacer"></div>
             
             <div id="sect-7-box" class="sectorblock">   <!-- INNOVATION block ---------------------------------->
-                <div class="memberblock">
+                <div class="memberblock" onclick="javascript:openBio('bioPopup_CH');">
                     {% asset Chris-Hamm.png class="member-pic" alt="Chris Hamm" %}
                 <br>
                 <p class="allcaps">Chris Hamm</p>
@@ -320,7 +320,7 @@
     <div class="dialog" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock">
             <div class="flex-wrapper">
-                {% asset MA-pic.png class="member-pic" alt="Mark Aucello" %}
+                {% asset MA_pic.png class="member-pic" alt="Mark Aucello" %}
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Mark D. Aucello</p>
@@ -403,7 +403,7 @@
 </div>
 
 <!-- CN popup -->
-<div id="bioPopup_EC" class="dialog-overlay" aria-hidden="true">
+<div id="bioPopup_CN" class="dialog-overlay" aria-hidden="true">
     <div class="dialog" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock">
             <div class="flex-wrapper">
@@ -482,7 +482,7 @@
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Ken Evans</p>
-                        <p>DOD?Air Force Sector Director</p>
+                        <p>DOD/Air Force Sector Director</p>
                     </span>
                 </div>
             </div>
@@ -500,7 +500,7 @@
 </div>
 
 <!-- MM popup -->
-<div id="bioPopup_KK" class="dialog-overlay" aria-hidden="true">
+<div id="bioPopup_MM" class="dialog-overlay" aria-hidden="true">
     <div class="dialog" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock">
             <div class="flex-wrapper">
@@ -532,7 +532,7 @@
 </div>
 
 <!-- JP popup -->
-<div id="bioPopup_KK" class="dialog-overlay" aria-hidden="true">
+<div id="bioPopup_JP" class="dialog-overlay" aria-hidden="true">
     <div class="dialog" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock">
             <div class="flex-wrapper">
