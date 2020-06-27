@@ -89,6 +89,13 @@ primary_navigation:
     url: /gettingstarted/
   - name: Industry
     url: /industry/
+    children:
+      - name: Industry
+        url: /industry/
+      - name: FIAC
+        url: /fiac/
+  - name: Media
+    url: /document/
   - name: Contact Us
     url: /document-with-sidenav/
 
