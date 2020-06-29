@@ -55,6 +55,7 @@ h5{
   }
 }
 
+//General stylings
 .whitetext, .whitetext a{
   color: white;
   margin: 20px auto;
@@ -65,9 +66,9 @@ h5{
   margin: 0 40px 20px 40px;
 }
 
-.grid-row-framed{
-  width: 100vw;
-  display: flex;
+.greyborder{
+  background-color: var(--fedsim-litegrey);
+  border: solid 2px var(--fedsim-darkgrey);
 }
 
 .h-spacer{
@@ -82,6 +83,15 @@ h5{
 
 .sidepadded{
   padding: 0 20px;
+}
+
+.absolute_bottom{
+  display: block;
+}
+
+.grid-row-framed{
+  width: 100vw;
+  display: flex;
 }
 
 
@@ -130,10 +140,6 @@ hr.footer-border{
   .footer_side_right{
     text-align: center; 
   }
-}
-
-.absolute_bottom{
-  display: block;
 }
 
 //Callout styles
@@ -340,8 +346,6 @@ hr.footer-border{
   position: absolute;
   opacity: 0;
   padding: 0 10px;
-  background-color: var(--fedsim-litegrey);
-  border: solid 2px var(--fedsim-darkgrey);
   font-size: 1.1em;
 }
 
@@ -422,6 +426,108 @@ hr.highlight-line, hr.highlight-line-sm{
   border-top: 5px solid var(--fedsim-blue1);
   border-radius: 2px;
 }
+
+//Our Work hover blocks
+
+.problock, .problock-container, .problock-inner{
+  width: 200px;
+  display: block;
+  text-align: center;
+}
+
+.problock-container{
+  height: 260px;
+  margin: 20px;
+  background-color: var(--fedsim-darkgrey);
+  color: white;
+}
+
+.problock{
+  height: 200px;
+}
+
+.problock-inner{
+  padding: 10px;
+  font-size: 0.8em;
+  background-color: var(--fedsim-litegrey);
+  color: var(--fedsim-darkgrey)
+}
+
+.color-back-blue1{  background-color: var(--fedsim-blue1); }
+.color-back-blue2{  background-color: var(--fedsim-blue2); }
+.color-back-blue3{  background-color: var(--fedsim-blue3); }
+.color-back-purple{  background-color: var(--fedsim-purple); }
+.color-back-pink{  background-color: var(--fedsim-pink); }
+.color-back-gold{  background-color: var(--fedsim-gold); }
+
+
+.proj-1{  background-image: asset-url("proj-1.png"); }
+.proj-2{  background-image: asset-url("proj-2.png"); }
+.proj-3{  background-image: asset-url("proj-3.png"); }
+.proj-4{  background-image: asset-url("proj-4.png"); }
+.proj-5{  background-image: asset-url("proj-5.png"); }
+.proj-6{  background-image: asset-url("proj-6.png"); }
+.proj-7{  background-image: asset-url("proj-7.png"); }
+.proj-8{  background-image: asset-url("proj-8.png"); }
+
+.blocktitle{
+ font-size: 0.7em;
+ font-weight: 600;
+ color: white;
+}
+
+.tight-text{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.very-tight-text{
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
+.problock-container h5{
+  padding: 0 10px;
+}
+
+.projectvalueblock{
+  display: flex;
+  position: absolute;
+  width: 190px;
+  height: 80px;
+  bottom: 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.valuetext{
+  display: flex;
+  width: 30px;
+}
+
+.valuetext p{
+  font-size: 0.4em;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.millionblock{
+  width: 140px;
+  display: inline-block;
+  position: absolute;
+  right: 4px;
+}
+
+.projectvalue{
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.mil-bil-text{
+  font-size: 0.6em;
+  font-weight: 700;
+}
+
 
 //About Us percentage circle
 .pie {
