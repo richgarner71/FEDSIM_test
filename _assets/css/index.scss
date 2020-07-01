@@ -143,6 +143,22 @@ h5{
   border-left: solid white 3px;
 }
 
+.right-aligned{
+  text-align: right;
+  margin-right: 0;
+}
+
+.withborder{
+  border: solid 2px var(--fedsim-blue1);
+}
+
+.withborder-left{
+  border-left: solid 2px var(--fedsim-blue1);
+}
+
+.withborder-right{
+  border-right: solid 2px var(--fedsim-blue1);
+}
 
 //Header styles
 .usa-banner__inner {
@@ -277,10 +293,6 @@ hr.footer-border{
   color: white;
   font-size: 1.4em;
   font-weight: 600;
-}
-
-.withborder{
-  border: solid 2px var(--fedsim-blue1);
 }
 
 .tallblock{
@@ -854,6 +866,76 @@ hr.small-line{
 }
 
 
+//FIAC Events and Registration
+
+.arrow-bullet {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+//Contact Us form
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+ input, textarea {
+    border: solid 1px var(--fedsim-blue1); 
+    outline:0;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    resize: none;
+ }
+ 
+ #input-submit {
+    border: 0;
+    color: white; 
+    font-weight: 700;
+    background: var(--fedsim-purple);
+    cursor: pointer;
+ }
+
+
+.half {
+ float: left;
+ width: 48%;
+ margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+    margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+ .half {
+    width: 100%; 
+    float: none;
+    margin-bottom: 0; 
+ }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+   content: " "; /* 1 */
+   display: table; /* 2 */
+}
+
+.cf:after {
+   clear: both;
+}
 
 
 // default mode hide banner
