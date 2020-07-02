@@ -481,6 +481,31 @@ hr.highlight-line, hr.highlight-line-sm{
 }
 
 //Our Work hover blocks
+.color-back-blue1{  background-color: var(--fedsim-blue1); }
+.color-back-blue2{  background-color: var(--fedsim-blue2); }
+.color-back-blue3{  background-color: var(--fedsim-blue3); }
+.color-back-purple{  background-color: var(--fedsim-purple); }
+.color-back-pink{  background-color: var(--fedsim-pink); }
+.color-back-gold{  background-color: var(--fedsim-gold); }
+.color-back-grey{ background-color: var(--fedsim-darkgrey); }
+
+
+.proj-1{  background-image: asset-url("proj-1.png"); }
+.proj-2{  background-image: asset-url("proj-2.png"); }
+.proj-3{  background-image: asset-url("proj-3.png"); }
+.proj-4{  background-image: asset-url("proj-4.png"); }
+.proj-5{  background-image: asset-url("proj-5.png"); }
+.proj-6{  background-image: asset-url("proj-6.png"); }
+.proj-7{  background-image: asset-url("07_RSC.png"); }
+.proj-8{  background-image: asset-url("08_DOD.png"); }
+
+.blocktitle{
+  font-size: 0.8em;
+  font-weight: 600;
+  color: white;
+  min-height: 54px;
+  padding: 0 6px;
+}
 
 .problock, .problock-container, .problock-inner{
   width: 200px;
@@ -491,7 +516,6 @@ hr.highlight-line, hr.highlight-line-sm{
 .problock-container{
   height: 260px;
   margin: 20px;
-  background-color: var(--fedsim-darkgrey);
   color: white;
 }
 
@@ -501,34 +525,10 @@ hr.highlight-line, hr.highlight-line-sm{
 
 .problock-inner{
   padding: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  font-weight: 600;
   background-color: var(--fedsim-litegrey);
   color: var(--fedsim-darkgrey)
-}
-
-.color-back-blue1{  background-color: var(--fedsim-blue1); }
-.color-back-blue2{  background-color: var(--fedsim-blue2); }
-.color-back-blue3{  background-color: var(--fedsim-blue3); }
-.color-back-purple{  background-color: var(--fedsim-purple); }
-.color-back-pink{  background-color: var(--fedsim-pink); }
-.color-back-gold{  background-color: var(--fedsim-gold); }
-
-
-.proj-1{  background-image: asset-url("proj-1.png"); }
-.proj-2{  background-image: asset-url("proj-2.png"); }
-.proj-3{  background-image: asset-url("proj-3.png"); }
-.proj-4{  background-image: asset-url("proj-4.png"); }
-.proj-5{  background-image: asset-url("proj-5.png"); }
-.proj-6{  background-image: asset-url("proj-6.png"); }
-.proj-7{  background-image: asset-url("proj-7.png"); }
-.proj-8{  background-image: asset-url("proj-8.png"); }
-
-.blocktitle{
-  font-size: 0.8em;
-  font-weight: 600;
-  color: white;
-  min-height: 54px;
-  padding: 0 6px;
 }
 
 .projectvalueblock{
@@ -548,8 +548,8 @@ hr.highlight-line, hr.highlight-line-sm{
 
 .valuetext p{
   font-size: 0.4em;
-  font-weight: 500;
-  margin-top: 60px;
+  font-weight: 600;
+  margin-top: 62px;
 }
 
 .millionblock{
@@ -560,12 +560,12 @@ hr.highlight-line, hr.highlight-line-sm{
 }
 
 .projectvalue{
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 .mil-bil-text{
-  font-size: 0.6em;
+  font-size: 0.5em;
   font-weight: 700;
 }
 
@@ -784,36 +784,15 @@ circle {
 
 
 hr.small-line{
-  border-top: 3px solid var(--fedsim-blue1);
-}
+  border-top: 3px solid var(--fedsim-blue1);}
 
-.sector-1{
-  background-color: var(--fedsim-pink);
-}
-
-.sector-2{
-  background-color: var(--fedsim-blue1);
-}
-
-.sector-3{
-  background-color: var(--fedsim-purple);
-}
-
-.sector-4{
-  background-color: var(--fedsim-gold);
-}
-
-.sector-5{
-  background-color: var(--fedsim-darkgrey);
-}
-
-.sector-6{
-  background-color: var(--fedsim-blue3);
-}
-
-.sector-7{
-  background-color: var(--fedsim-litegrey);
-}
+.sector-1{  background-color: var(--fedsim-pink);}
+.sector-2{  background-color: var(--fedsim-blue1);}
+.sector-3{  background-color: var(--fedsim-purple);}
+.sector-4{  background-color: var(--fedsim-gold);}
+.sector-5{  background-color: var(--fedsim-darkgrey);}
+.sector-6{  background-color: var(--fedsim-blue3);}
+.sector-7{  background-color: var(--fedsim-litegrey);}
 
 //Bio popout modals
 .dialog-overlay {
@@ -869,7 +848,7 @@ hr.small-line{
 //FIAC Events and Registration
 
 .arrow-bullet {
-  border: solid black;
+  border: solid var(--fedsim-blue1);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -877,7 +856,7 @@ hr.small-line{
   -webkit-transform: rotate(-45deg);
 }
 
-.sm-yes, .sm-no{
+#sm-yes, #sm-no{
   width: 80px;
 }
 
