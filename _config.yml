@@ -97,7 +97,7 @@ primary_navigation:
   - name: Media
     url: /document/
   - name: Contact Us
-    url: /document-with-sidenav/
+    url: /contact/
 
 secondary_navigation:
   - name: Secondary link
