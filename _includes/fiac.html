@@ -55,16 +55,24 @@
 
 <div class="flex-wrapper-big">
     <form class="cf">
-        <div class="half left cf">
-        <input type="text" id="input-name" placeholder="Full Name">
-        <input type="email" id="input-email" placeholder="Email address">
+        <div class="flex-wrapper">
+            <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Full Name">
+            <input type="email" id="input-email" placeholder="Email address">
+            </div>
+            <div class="half right cf">
+            
+            <input type="text" id="input-job" placeholder="Job Title">
+            <input type="text" id="input-inc" placeholder="Test INC">
+            </div>  
         </div>
-        <div class="half right cf">
-        
-        <input type="text" id="input-job" placeholder="Job Title">
-        <input type="text" id="input-inc" placeholder="Test INC">
-        </div>  
-
+        <div class="flex-wrapper">
+            <p>Is your company a small business?</p><br>
+            <input type="radio" id="sm-yes" name="is-sm" value="yes">
+            <label for="sm-yes">Yes</label>
+            <input type="radio" id="sm-no" name="is-sm" value="no">
+            <label for="sm-no">No</label>
+        </div>
         <input type="submit" value="Submit" id="input-submit">
     </form>
 </div>

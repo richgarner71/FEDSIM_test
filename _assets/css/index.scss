@@ -877,10 +877,14 @@ hr.small-line{
   -webkit-transform: rotate(-45deg);
 }
 
+.sm-yes, .sm-no{
+  width: 80px;
+}
+
 
 //Contact Us form
 form {
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
   margin: 20px auto;
 }
@@ -897,10 +901,17 @@ form {
  
  #input-submit {
     border: 0;
+    border-radius: 7px;
+    width: 200px;
+    margin: 0 0 0 50px;
     color: white; 
     font-weight: 700;
-    background: var(--fedsim-purple);
+    background: var(--fedsim-blue3);
     cursor: pointer;
+ }
+
+ #input-submit:hover{
+   background: var(--fedsim-blue1);
  }
 
 
