@@ -30,8 +30,9 @@
 <br>
 <div class="flex-wrapper-big withborder">
     <!-- left side -->
-    <div class="half-block right-aligned" style="color: var(--fedsim-blue1);">
-        <h1>EVENTS<br>CALENDAR</h1>
+    <div class="right-aligned with-side-buffer" style="color: var(--fedsim-blue1);">
+        <h1><span style="font-size: 1.85em; margin-block-end: 4px;">EVENTS</span>
+            <br><span style="font-size: 1.3em;">CALENDAR</span></h1>
         <p class="post-text">Recurring <i class="arrow-bullet"></i></p>
         <p class="post-text">Upcoming <i class="arrow-bullet"></i></p>
         <p class="post-text">Past <i class="arrow-bullet"></i></p>
@@ -39,11 +40,35 @@
     </div>
     <div class="bio-spacer withborder-left"></div>
     <!-- current events -->
-    <div class="half-block">
+    <div id="events-rec" class="events-block">
+        <ul class="eventlist">
+            <li>
+                <p class="eventtitle">COVID Working Group</p>
+                <p class="eventdetails">Recurring Fridays 12:00 (Eastern Time)</p>
+            </li>
+            <li>
+                <p class="eventtitle">Streamlined Committee</p>
+                <p class="eventdetails">Recurring Fridays 12:30 (Eastern Time)</p>
+            </li>
+            <li>
+                <p class="eventtitle">Small Business Committee</p>
+                <p class="eventdetails">Recurring 3rd Wednesday every other month
+                    2:00 (Eastern Time)</p>
+            </li>
+            <li>
+                <p class="eventtitle">Marketing Committee</p>
+                <p class="eventdetails">Recurring 2nd Wednesday every month 2:00
+                    (Eastern Time)</p>
+            </li>
+        </ul>
+
+    </div>
+    <!-- current events -->
+    <div id="events-cur" class="events-block">
         
     </div>
     <!-- past events -->
-    <div class="half-block">
+    <div id="events-past" class="events-block">
         
     </div>
 </div>
