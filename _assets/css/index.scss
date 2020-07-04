@@ -56,30 +56,24 @@ h5{
 }
 
 //General stylings
+.absolute_bottom{
+  display: block;
+}
 
 .big-titles{
   font-size: 4em;
   margin-block-start: auto;
   margin-block-end: auto;
 }
-.whitetext, .whitetext a{
-  color: white;
-  margin: 20px auto;
-  font-weight: bold;
-}
-
-.post-text{
-  font-size: 1.2em;
-  font-weight: 500;
-}
-
-.with-side-buffer{
-  margin: 0 40px 20px 40px;
-}
 
 .greyborder{
   background-color: var(--fedsim-litegrey);
   border: solid 2px var(--fedsim-darkgrey);
+}
+
+.grid-row-framed{
+  width: 100vw;
+  display: flex;
 }
 
 .h-spacer{
@@ -92,17 +86,28 @@ h5{
   padding-bottom: 10px;
 }
 
+.hidden{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: none!important;
+  visibility: hidden!important;
+}
+
+.hide{
+  display: none;
+}
+
+.post-text{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
 .sidepadded{
   padding: 0 20px;
-}
-
-.absolute_bottom{
-  display: block;
-}
-
-.grid-row-framed{
-  width: 100vw;
-  display: flex;
 }
 
 .section-btn{
@@ -148,6 +153,16 @@ h5{
   margin-right: 10px;
 }
 
+.whitetext, .whitetext a{
+  color: white;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+.with-side-buffer{
+  margin: 0 40px 20px 40px;
+}
+
 .withborder{
   border: solid 2px var(--fedsim-blue1);
 }
@@ -158,6 +173,10 @@ h5{
 
 .withborder-right{
   border-right: solid 2px var(--fedsim-blue1);
+}
+
+::selection{
+  color: var(--fedsim-blue2);
 }
 
 //Header styles
@@ -892,35 +911,52 @@ hr.small-line{
 }
 
 
-
-
-#sm-yes, #sm-no{
-  width: 80px;
+//Contact Us form
+#gform{
+  font-size: 1.2em;
 }
 
+.error-msg{
+  border: 1px solid var(--fedsim-litegrey);
+  width: 250px;
+  padding: 7px;
+  margin-bottom: 10px;
+  box-shadow: 2px 4px 5px 1px var(--fedsim-litegrey);
+}
 
-//Contact Us form
-form {
+form.contactform {
   max-width: 700px;
-  text-align: center;
   margin: 20px auto;
+}
+
+input{
+  margin: 0 0 1rem 0;
+}
+
+[type=checkbox], [type=radio]{
+  width: 24px;
+    height: 24px;
+    margin: 24px 0 0 0;
+    vertical-align: sub;
 }
 
  input, textarea {
     border: solid 1px var(--fedsim-blue1); 
     outline:0;
     padding: 1em;
-    display: block;
     width: 100%;
     margin-top: 1em;
     resize: none;
  }
- 
+
+ .input-label{
+   padding-top: 15px;
+   font-weight: 500;
+ }
+
  #input-submit {
     border: 0;
     border-radius: 7px;
-    width: 200px;
-    margin: 0 0 0 50px;
     color: white; 
     font-weight: 700;
     background: var(--fedsim-blue3);
@@ -931,6 +967,19 @@ form {
    background: var(--fedsim-blue1);
  }
 
+ .input-text{
+   margin-block-end: 2px;
+ }
+
+ .label{
+  font-size: 0.875rem;
+  color: var(--fedsim-darkgrey);
+  cursor: pointer;
+  display: block;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+ }
 
 .half {
  float: left;
