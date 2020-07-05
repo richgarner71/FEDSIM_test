@@ -3,30 +3,92 @@
         <h1>Contact Us</h1>
     </div>
 </div>    
-<div class="flex-wrapper-big">
+
+
+<div id="formConfirmation" class="flex-wrapper-big hide">
     <div class="infoblock">
-        <p>To learn more about your opportunities with FEDSIM and be contacted by a team member, <br>
-            please fill out and submit the form below.</p>
+       <h4> Form has been submitted successfully.</h4>
     </div>
 </div>
 
-<div class="flex-wrapper-big">
-    <form class="cf">
-        <div class="flex-wrapper">
-            <div class="half left cf">
-                <input type="text" id="input-fname" placeholder="First Name">
-                <input type="text" id="input-lname" placeholder="Last Name">
-                <input type="text" id="input-agency" placeholder="Agency (Optional)">
-                <input type="text" id="input-company" placeholder="Company (Optional)">
-            </div>
-            <div class="half right cf">
-                <input type="email" id="input-email" placeholder="Email address">
-                <input type="text" id="input-phone" placeholder="Phone (Optional)">
-                <textarea name="message" type="text" id="input-overview" placeholder="Project Overview" style="height:120px;"></textarea>
-            </div>
-        </div>  
-        <div class="flex-wrapper">
-            {% asset Logo_Fedsim_sm.png %} <input type="submit" value="Submit" id="input-submit">
-        </div>
-    </form>
+<div id="contactFormText" class="flex-wrapper-big">
+    <div class="infoblock">
+        <p>To learn more about your opportunities with FEDSIM and be contacted by a team member, <br>
+            please fill out and submit the form below.</p>
+    </div> 
 </div>
+
+<div id="contactForm" class="flex-wrapper-big">
+    <form 
+    name="gform" 
+    id="gform" 
+    enctype="text/plain"
+    action="https://docs.google.com/forms/d/e/1FAIpQLScxbVRFhqhjXJ0zzGl8e_DWaIokLqd2-oEd-4EjhcBm-R8V2A/formResponse?"
+    target="hidden_iframe" 
+    onsubmit="submitForm(this)"
+    >
+        
+    <div class="flex-wrapper">
+        <div class="half left cf">
+
+            <label class="hidden" for="entry.1248298072">First Name *</label>
+            <input id="name" type="text" name="entry.1248298072" maxlength="50" size="30"
+                placeholder="First Name" required>
+            <label class="hidden" for="entry.2130392404">Last Name *</label>
+            <input id="name" type="text" name="entry.2130392404" maxlength="50" size="30"
+                placeholder="Last Name" required>
+            <label class="hidden" for="entry.1398641644">Agency (Optional)</label>
+            <input id="agency" type="text" name="entry.1398641644" maxlength="50" size="30"
+                placeholder="Agency (Optional)">
+            <label class="hidden" for="entry.1038294161">Company Name (Optional)</label>
+            <input id="company" type="text" name="entry.1038294161" maxlength="50" size="30"
+                placeholder="Company Name (Optional)">                    
+        
+            </div>
+        <div class="half right cf">
+
+            <label class="hidden" for="entry.1766108790">Email</label>
+            <input 
+                id="email" 
+                type="email" 
+                name="entry.1766108790" 
+                maxlength="50" 
+                size="30" 
+                placeholder="Email" 
+                required
+            >
+            <label class="hidden" for="entry.990130042">Phone (Optional)</label>
+            <input id="phone" type="text" name="entry.990130042" maxlength="50" size="30"
+                placeholder="Phone (Optional)">
+            <label class="hidden" for="entry.1215864887">Project Overview *</label>
+            <textarea id="message" name="entry.1215864887" maxlength="1000" cols="25" rows="5"
+                style="padding-bottom: 19px;" placeholder="Project Overview" required></textarea>
+        
+        </div>                
+    </div>  
+    <div class="flex-wrapper">
+        <input id="input-submit" type="submit" value="Submit">
+    </div>
+
+    </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+</div>
+
+<script type="text/javascript">
+    var submitted = false;
+
+    function submitForm(e) {
+        document.getElementById("formConfirmation").classList.remove('hide');
+        document.getElementById("contactForm").classList.add('hide');
+        document.getElementById("contactFormText").classList.add('hide');
+
+        submitted=true;
+    }
+
+    $('#gform').on('submit', function (e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('<h2>Thank you for your submission! We will be in touch shortly.</h2>');
+    });
+
+</script>
