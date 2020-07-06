@@ -18,6 +18,7 @@ html{
   --fedsim-purple: #570A3B;
   --fedsim-pink: #AA839D;
   --fedsim-gold: #a38e4a;
+  --fedsim-offwhite: #f3f3f3;
 }
 
 // Text Styles
@@ -54,6 +55,8 @@ h5{
     margin-block-end: auto;
   }
 }
+
+
 
 //General stylings
 .absolute_bottom{
@@ -99,6 +102,11 @@ h5{
 
 .hide{
   display: none!important;
+}
+
+hr.highlight-line, hr.highlight-line-sm{
+  border-top: 5px solid var(--fedsim-blue1);
+  border-radius: 2px;
 }
 
 .post-text{
@@ -165,6 +173,11 @@ h5{
 
 .withborder{
   border: solid 2px var(--fedsim-blue1);
+}
+
+.withborder-grey{
+  border: solid 2px var(--fedsim-darkgrey);
+  color: var(--fedsim-darkgrey)
 }
 
 .withborder-left{
@@ -306,12 +319,19 @@ hr.footer-border{
   margin: auto;
 }
 
-.block-header{
+.block-header, .block-header-grey{
   padding: 10px;
-  background-color: var(--fedsim-blue1);
   color: white;
   font-size: 1.4em;
   font-weight: 600;
+  text-transform: uppercase;
+}
+.block-header{
+  background-color: var(--fedsim-blue1);
+}
+
+.block-header-grey{
+  background-color: var(--fedsim-darkgrey);
 }
 
 .tallblock{
@@ -494,10 +514,7 @@ hr.footer-border{
   }
 }
 
-hr.highlight-line, hr.highlight-line-sm{
-  border-top: 5px solid var(--fedsim-blue1);
-  border-radius: 2px;
-}
+
 
 //Our Work hover blocks
 .color-back-blue1{  background-color: var(--fedsim-blue1); }
@@ -665,6 +682,34 @@ circle {
 	animation: grow 2s infinite linear;
 }
 
+
+//Join Us sections
+
+.icon-cell{
+  width: 60px;
+  display: contents;
+}
+
+.icon-cell img{
+  width: 60px;
+  height: 60px;
+}
+
+.perkblock{
+  height: 100px;
+}
+
+.perk-title{
+  color: var(--fedsim-purple);
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 6px 0 0 0;
+}
+
+.perk-desc{
+  margin: 0;
+}
 
 //Members and leadership
 
