@@ -104,6 +104,10 @@ h5{
   display: none!important;
 }
 
+.show{
+  display: block!important;
+}
+
 hr.highlight-line, hr.highlight-line-sm{
   border-top: 5px solid var(--fedsim-blue1);
   border-radius: 2px;
@@ -926,6 +930,7 @@ hr.small-line{
 }
 
 .events-block{
+  height: 320px;
   display: none;
   width: inherit;
   overflow-x: auto;
