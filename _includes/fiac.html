@@ -190,18 +190,26 @@ target="hidden_iframe" onsubmit="return(runValidation())">
     <div id="interests" class="columns medium-10 large-10 briefFormTop no-padding">
         <p class="input-text">Please indicate committees you are interested in joining</p>
         <div id="secondCheck" class="hide error-msg"><span class="exclamation-mark">!</span>Choose one of the following.</div>
+        
         <input 
             onchange="isCheck(this, 'second')"
             class="checkbox2"
             name="entry.957511209" type="checkbox" role="listitem" value="Streamline Acquisition"
             data-value="Streamline Acquisition"> Streamline Acquisition 
             <i href="#" class="fas fa-info-circle js-simple-tooltip" data-simpletooltip-text="This committee focuses on improving the procurement process and overall FEDSIM experience, whether through policy, best practices, pilot programs, or process changes."></i><br>
+        
         <input 
             onchange="isCheck(this, 'second')"
             class="checkbox2"
-            name="entry.957511209" type="checkbox" role="listitem" value="Small Business" data-value="Small Business"> Small
-        Business <i href="#" class="fas fa-info-circle js-simple-tooltip"
+            name="entry.957511209" type="checkbox" role="listitem" value="Small Business" data-value="Small Business"> Small Business <i href="#" class="fas fa-info-circle js-simple-tooltip"
             data-simpletooltip-text="This committee focuses on engaging the small business community, whether through GSA AAS FEDSIM opportunities, matchmaking with large businesses, or as outreach to the federal GOVCON small business community."></i><br>
+        
+        <input 
+            onchange="isCheck(this, 'second')"
+            class="checkbox2"
+            name="entry.957511209" type="checkbox" role="listitem" value="COVID" data-value="COVID"> COVID Working Group <i href="#" class="fas fa-info-circle js-simple-tooltip"
+            data-simpletooltip-text="This working group focuses on process and policy impacts resulting from the global coronavirus pandemic as it relates to GSA AAS operations.  Outputs from this group inform the larger streamlined acquisition committee."></i><br>
+        
         <input 
             onchange="isCheck(this, 'second')"
             class="checkbox2"
@@ -223,15 +231,12 @@ target="hidden_iframe" onsubmit="return(runValidation())">
 
 <script type="text/javascript">
     var submitted = false;
-    // testing inputs, remove this
+
     (function() {
-      //document.getElementById('name').value = 'mauricio-test';
-      //document.getElementById('email').value = 'test@gmail.com';
-      //document.getElementById('jobtitle').value = 'tester';
-      //
+
 document.getElementById('company').value = 'testINC';
     }());
-    // remove this 
+
     function isSmallBusiness(elem) {
       if(elem.value === "Yes"){
         document.getElementById("status").classList.remove("hide");
