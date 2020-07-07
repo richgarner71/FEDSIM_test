@@ -95,7 +95,7 @@ primary_navigation:
       - name: FIAC
         url: /fiac/
   - name: Media
-    url: /document/
+    url: /media/
   - name: Contact Us
     url: /contact/
 
