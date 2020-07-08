@@ -158,36 +158,26 @@ target="hidden_iframe" onsubmit="return(runValidation())">
 <div class="flex-wrapper">
     <div class="half left cf">
 
-    <label class="hidden" for="entry.474384306">Full Name *</label>
-    <input 
-        id="name" 
-        type="text" 
-        name="entry.474384306" 
-        maxlength="50" 
-        size="30" 
-        placeholder="Full Name"
-        required
-    >
-    <label class="hidden" for="entry.1846413580">Email *</label>
-    <input id="email" type="text" name="entry.1846413580" maxlength="50" size="30" placeholder="Email"
-        required>
+    <label for="entry.474384306">Full Name <span class="req">*</span></label>
+    <input id="name" type="text" name="entry.474384306" maxlength="50" size="30" required>
+
+    <label for="entry.1846413580">Email <span class="req">*</span></label>
+    <input id="email" type="text" name="entry.1846413580" maxlength="50" size="30" required>
 
     </div>
     <div class="half left cf">
 
-    <label class="hidden" for="entry.1832181272">Job Title *</label>
+    <label for="entry.1832181272">Job Title <span class="req">*</span></label>
+    <input id="jobtitle" type="text" name="entry.1832181272" maxlength="50" size="30" required>
 
-    <input id="jobtitle" type="text" name="entry.1832181272" maxlength="50" size="30"
-        placeholder="Job Title" required>
-    <label class="hidden" for="entry.136536718">Company *</label>
-    <input id="company" type="text" name="entry.136536718" maxlength="50" size="30"
-        placeholder="Company" required>
+    <label for="entry.136536718">Company <span class="req">*</span></label>
+    <input id="company" type="text" name="entry.136536718" maxlength="50" size="30" required>
 
         </div>
     </div>
 
 
-    <p class="input-text">Is your company a small business?</p>
+    <p class="input-text">Is your company a small business? <span class="req">*</span></p>
 
     <label for="entry.942484799">
         <input class="input-label"
@@ -249,7 +239,7 @@ target="hidden_iframe" onsubmit="return(runValidation())">
 
 
     <div id="interests" class="columns medium-10 large-10 briefFormTop no-padding">
-        <p class="input-text">Please indicate committees you are interested in joining</p>
+        <p class="input-text">Please indicate committees you are interested in joining:</p>
         <div id="secondCheck" class="hide error-msg"><span class="exclamation-mark">!</span>Choose one of the following.</div>
         
         <input 
@@ -281,6 +271,7 @@ target="hidden_iframe" onsubmit="return(runValidation())">
 
     </div>
 
+<div class="v-buffer"></div>
 
     <div class='flex-wrapper-big'>
         <input id="input-submit" type='submit' value='Submit'>
@@ -292,11 +283,6 @@ target="hidden_iframe" onsubmit="return(runValidation())">
 
 <script type="text/javascript">
     var submitted = false;
-
-    (function() {
-
-document.getElementById('company').value = 'testINC';
-    }());
 
     function isSmallBusiness(elem) {
       if(elem.value === "Yes"){
