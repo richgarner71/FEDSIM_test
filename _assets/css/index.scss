@@ -361,6 +361,16 @@ hr.footer-border{
   }
 }
 
+@media screen and (max-width: 375px){
+  .infoblock, .modalblock{
+    width: 335px;
+  }
+
+  .tallblock{
+    width: 355px;
+  }
+}
+
 .darkblock, .darkblock-alt{
   color: white;
   background-color: var(--fedsim-blue1);
@@ -425,7 +435,7 @@ hr.footer-border{
 .learnblock{
   width: 480px;
   height: 200px;
-  margin: 20px;
+  margin: 10px;
   display: block;
   text-align: center;
 }
