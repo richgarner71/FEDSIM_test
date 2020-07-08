@@ -965,10 +965,6 @@ hr.small-line{
   margin-block-start: 6px;
 }
 
-.req{
-  color: red;
-}
-
 
 //Contact Us form
 #gform{
@@ -992,6 +988,14 @@ input{
   margin: 0 0 1rem 0;
 }
 
+.req{
+  color: red;
+}
+
+li.input-li{
+  list-style: none;
+}
+
 [type=checkbox], [type=radio]{
   width: 24px;
     height: 24px;
@@ -1011,6 +1015,7 @@ input{
  .input-label{
    padding-top: 15px;
    font-weight: 500;
+   margin-left: 40px;
  }
 
  #input-submit {
