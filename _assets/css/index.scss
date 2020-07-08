@@ -965,6 +965,10 @@ hr.small-line{
   margin-block-start: 6px;
 }
 
+.req{
+  color: red;
+}
+
 
 //Contact Us form
 #gform{
@@ -1000,7 +1004,7 @@ input{
     outline:0;
     padding: 1em;
     width: 100%;
-    margin-top: 1em;
+    margin-top: 0.2em;
     resize: none;
  }
 
