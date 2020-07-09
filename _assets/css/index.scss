@@ -515,7 +515,7 @@ hr.footer-border{
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 414px){
   .block-text-med{
     font-size: 0.8em;
   }
@@ -525,11 +525,15 @@ hr.footer-border{
   }
   
   .block-num-med{
-    font-size: 2em;
+    font-size: 3em;
   }
   
   .block-num-big{
     font-size: 3em;
+  }
+
+  .half-block {
+    width: 160px;
   }
 }
 
@@ -656,6 +660,24 @@ hr.footer-border{
     height: 160px;
     margin: 8px;
   }
+}
+
+@media screen and (max-width: 414px){
+  .pie {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .pie-percentage{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+  }
+
+  .fitpie{
+    height: 200px;
+  }
+
 }
 
 svg {
