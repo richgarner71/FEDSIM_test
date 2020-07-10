@@ -306,10 +306,12 @@ hr.footer-border{
 
   .flex-wrapper{
     display: flow-root;
+    flex-flow: wrap;
   }
 
   .one-third, .one-half, .one-fourth{
     width: auto;
+    display: flex;
   }
 }
 
@@ -323,6 +325,7 @@ hr.footer-border{
 }
 
 .infoblock, .modalblock{
+  display: flow-root;
   color: var(--fedsim-blue1);
   background-color: white;
   margin: auto;
@@ -356,18 +359,16 @@ hr.footer-border{
 
 @media screen and (max-width: 414px){
   .tallblock{
-    width: 360px;
+    width: 330px;
     height: auto;
   }
-}
 
-@media screen and (max-width: 375px){
-  .infoblock, .modalblock{
-    width: 335px;
+  .infoblock{
+    width: 300px;
   }
-
-  .tallblock{
-    width: 355px;
+  
+  .modalblock{
+    width: 300px;
   }
 }
 
@@ -411,6 +412,10 @@ hr.footer-border{
   }
 }
 
+.dual-block{
+  display: flex;
+}
+
 .half-block {
   width: 50%;
   display: grid;
@@ -426,10 +431,18 @@ hr.footer-border{
 
 .fourth-block{
   display: block;
-  margin-left: 4px;
-  margin-right: 4px;
+  width: 25%;
+  margin: 0 4px;
   text-align: center;
   padding-bottom: 16px;
+}
+
+@media screen and (max-width: 414px){
+  .fourth-block{
+    width: 380px;
+    margin: 4px;
+  }
+
 }
 
 .learnblock{
@@ -517,7 +530,7 @@ hr.footer-border{
 
 @media screen and (max-width: 414px){
   .block-text-med{
-    font-size: 0.8em;
+    font-size: 1em;
   }
   
   .block-text-big{
@@ -533,7 +546,8 @@ hr.footer-border{
   }
 
   .half-block {
-    width: 160px;
+    width: 189px;
+    margin: 0;
   }
 }
 
@@ -675,7 +689,7 @@ hr.footer-border{
   }
 
   .fitpie{
-    height: 200px;
+    height: 180px;
   }
 
 }
