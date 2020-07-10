@@ -334,16 +334,17 @@ hr.footer-border{
 .block-header, .block-header-grey{
   padding: 10px;
   color: white;
-  font-size: 1.4em;
   font-weight: 600;
   text-transform: uppercase;
 }
 .block-header{
   background-color: var(--fedsim-blue1);
+  font-size: 1.2em;
 }
 
 .block-header-grey{
   background-color: var(--fedsim-darkgrey);
+  font-size: 1.4em;
 }
 
 .tallblock{
@@ -359,12 +360,12 @@ hr.footer-border{
 
 @media screen and (max-width: 414px){
   .tallblock{
-    width: 330px;
+    width: 370px;
     height: auto;
   }
 
   .infoblock{
-    width: 300px;
+    width: 370px;
   }
   
   .modalblock{
@@ -446,21 +447,45 @@ hr.footer-border{
 }
 
 .learnblock{
-  width: 480px;
-  height: 200px;
+  width: 400px;
+  height: 190px;
   margin: 10px;
   display: block;
   text-align: center;
 }
 
+@media screen and (max-width: 414px){
+  .learnblock{
+    width: 380px;
+    margin: 4px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .learnblock{
+    width: 355px;
+    margin: 4px;
+  }
+}
+
 .learnblock ol, .learnblock ul{
-  width: 50%;
+  width: 60%;
   text-align: left;
   margin: auto;
 }
 
 .learnblock p{
   margin-block-start: 0.4em;
+  font-size: 1.1em;
+}
+
+.learnblock-hover-text{
+  font-size: 1em!important;
+}
+
+.learn-text{
+  font-size: 0.9em!important;
+  margin-block-end: 0.7em;
 }
 
 .learn-gov{
@@ -472,6 +497,23 @@ hr.footer-border{
   background-image: asset-url("cso2.png");
   background-color: var(--fedsim-darkgrey);
 }
+
+.learnmore-mobile{
+display: none;
+}
+
+@media screen and (max-width: 414px){
+  .learnmore-full{
+    display: none;
+  }
+
+  .learnmore-mobile{
+    display: flex;
+  }
+}
+
+
+
 
 .stack-top{
   z-index: 9;
@@ -487,6 +529,7 @@ hr.footer-border{
 
 .stack-top h2{
   color: var(--fedsim-darkgrey);
+  margin: 10px;
 }
 
 .block-text-med, .block-text-big, .block-num-med, .block-num-big{
