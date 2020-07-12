@@ -201,6 +201,12 @@ hr.highlight-line, hr.highlight-line-sm{
   color: var(--fedsim-blue2);
 }
 
+@media screen and (max-width: 414px){
+  .no-mobile{
+    display: none!important;
+  }
+}
+
 //Header styles
 .usa-banner__inner {
   display: block;
@@ -329,6 +335,7 @@ hr.footer-border{
   .flex-wrapper{
     display: flow-root;
     flex-flow: wrap;
+    margin: auto;
   }
 
   .one-third, .one-half, .one-fourth{
@@ -351,6 +358,7 @@ hr.footer-border{
   color: var(--fedsim-blue1);
   background-color: white;
   margin: auto;
+  padding: 10px;
 }
 
 .block-header, .block-header-grey{
@@ -384,10 +392,6 @@ hr.footer-border{
   .tallblock{
     width: 370px;
     height: auto;
-  }
-
-  .infoblock{
-    width: 370px;
   }
   
   .modalblock{
@@ -847,20 +851,28 @@ circle {
   background-color: white;
 }
 
-.memberblock{
+.memberblock, .memberblock-head{
   background-color: var(--fedsim-litegrey);
   color: var(--fedsim-darkgrey);
   font-size: 0.8em;
   font-weight: 600;
-  width: 150px;
-  height: 220px;
   padding: 8px;
   text-align: center;
   vertical-align: top;
   display: inline-block;
 }
 
-.memberblock p{
+.memberblock{
+  width: 150px;
+  height: 220px;
+}
+
+.memberblock-head{
+  width: 160px;
+  height: 220px;
+}
+
+.memberblock p, .memberblock-head p{
   margin-top: 6px;
   margin-bottom: 0;
 }
@@ -906,7 +918,7 @@ circle {
 .wordbox{
   display: grid;
   width: 110px;
-  padding: 2px;
+  padding: 10px 2px;
   text-align: center;
 }
 
@@ -920,14 +932,22 @@ circle {
     width: 2px;
   }
 
-  .memberblock{
+  .memberblock, .memberblock-head{
     font-size: 0.7em;
+  }
+
+  .memberblock{
     width: 160px;
     height: 150px;
+  }
+
+  .memberblock-head{
     margin-bottom: 10px;
+    width: 167px;
+    height: 154px;
   }
   
-  .memberblock p{
+  .memberblock p, .memberblock-head p{
     margin-top: 1px;
   }
   
