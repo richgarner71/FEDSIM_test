@@ -270,6 +270,28 @@ hr.footer-border{
   font-size: 2rem;
 }
 
+@media screen and (max-width: 414px){
+  .usa-hero{
+    background-image: none;
+    height: auto;
+  }
+
+  .usa-hero__callout{
+    background-color: var(--fedsim-blue1);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .usa-hero__heading{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    padding: 12px;
+  }
+
+}
 @media screen and (min-width: 40em){
   .usa-hero__callout{
     min-width: 34rem;
