@@ -1022,7 +1022,14 @@ hr.small-line{
 }
 
 .dialog{
-	max-width: 600px;
+  max-width: 600px;
+  max-height: 650px;
+}
+
+@media screen and (max-width: 414px){
+  .dialog{
+    overflow-y: scroll;
+  }
 }
 
 .dialog-overlay[aria-hidden="true"],
