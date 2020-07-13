@@ -375,6 +375,7 @@ hr.footer-border{
 .block-header-grey{
   background-color: var(--fedsim-darkgrey);
   font-size: 1.4em;
+  margin-bottom: 20px;
 }
 
 .tallblock{
@@ -711,6 +712,34 @@ display: none;
   font-weight: 700;
 }
 
+@media screen and (Max-width: 414px){
+  .problock, .problock-container{
+    width: 340px;
+  }
+
+  .problock{
+    height: 210px;
+    background-image: none!important;
+  }
+
+  .problock-inner{
+    width: 300px;
+    height: 190px;
+    opacity: 100;
+    margin: auto;
+    position: relative;
+  }
+
+  .blocktitle{
+    font-size: 1em;
+    padding: 6px;
+  }
+
+  .projectvalueblock{
+    width: 290px!important;
+  }
+}
+
 
 //About Us percentage circle
 .pie {
@@ -819,6 +848,10 @@ circle {
   height: 60px;
 }
 
+.perks-half{
+  width: 50%;
+}
+
 .perkblock{
   height: 100px;
 }
@@ -834,6 +867,34 @@ circle {
 .perk-desc{
   margin: 0;
 }
+
+@media screen and (max-width: 414px){
+  .perks-half{
+    display: flow-root;
+    flex-flow: wrap;
+    width: auto;
+    margin: auto;
+  }
+
+  .perkblock{
+    height: auto;
+    padding: 7px;
+  }
+
+  .icon-cell{
+    display: none!important;
+  }
+
+  .section-btn{
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .submenubar{
+    flex-flow: row;
+  }
+}
+
 
 //Members and leadership
 
