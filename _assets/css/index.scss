@@ -125,6 +125,13 @@ hr.highlight-line, hr.highlight-line-sm{
   margin: auto;
   background-color: var(--fedsim-blue3);
   color: white;
+  border-radius: 12px;
+  border: solid white 5px;
+  cursor: pointer;
+}
+
+.section-btn p{
+  margin: auto;
 }
 
 .section-btn:hover{
@@ -336,7 +343,6 @@ hr.footer-border{
 
   .one-third, .one-half, .one-fourth{
     width: auto;
-    display: flex;
   }
 }
 
@@ -1119,8 +1125,8 @@ hr.small-line{
 //FIAC Events and Registration
 
 .arrow-bullet {
-  border: solid var(--fedsim-blue1);
-  border-width: 0 3px 3px 0;
+  border: solid white;
+  border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 3px;
   transform: rotate(-45deg);
@@ -1133,6 +1139,7 @@ hr.small-line{
   width: inherit;
   overflow-x: auto;
   overflow-y: scroll;
+  padding: 10px;
 }
 
 #events-rec{
@@ -1270,7 +1277,6 @@ li.input-li{
 .cf:after {
    clear: both;
 }
-
 
 // default mode hide banner
 .usa-banner__content {

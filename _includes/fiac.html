@@ -33,15 +33,15 @@
     <div class="right-aligned with-side-buffer" style="color: var(--fedsim-blue1);">
         <h1><span style="font-size: 1.85em; margin-block-end: 4px;">EVENTS</span>
             <br><span style="font-size: 1.3em;">CALENDAR</span></h1>
-            <div onclick="javascript:showEvents('events-rec');"><p id="bullet-rec" class="post-text">Recurring <i class="arrow-bullet"></i></p></div>
-            <div onclick="javascript:showEvents('events-cur');"><p id="bullet-cur" class="post-text">Upcoming <i class="arrow-bullet"></i></p></div>
-            <div onclick="javascript:showEvents('events-past');"><p id="bullet-past" class="post-text">Past <i class="arrow-bullet"></i></p></div>
+            <div class="section-btn" onclick="javascript:showEvents('events-rec');"><p id="bullet-rec" class="post-text">Recurring <i class="arrow-bullet"></i></p></div>
+            <div class="section-btn" onclick="javascript:showEvents('events-cur');"><p id="bullet-cur" class="post-text">Upcoming <i class="arrow-bullet"></i></p></div>
+            <div class="section-btn" onclick="javascript:showEvents('events-past');"><p id="bullet-past" class="post-text">Past <i class="arrow-bullet"></i></p></div>
         <br>
     </div>
     <div class="bio-spacer withborder-left"></div>
     <!-- current events -->
     <div id="events-rec" class="events-block">
-      <h4>Recurrent Events</h4>
+      <h4>Recurring Events</h4>
         <ul class="eventlist">
             <li>
                 <p class="eventtitle">COVID Working Group</p>
