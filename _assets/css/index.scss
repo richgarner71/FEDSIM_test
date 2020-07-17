@@ -323,10 +323,6 @@ hr.footer-border{
   .flex-wrapper-big{
     width: 740px;
   }
-
-  .flex-wrapper{
-    display: flow-root;
-  }
 }
 
 @media screen and (max-width: 414px){
@@ -336,7 +332,7 @@ hr.footer-border{
   }
 
   .flex-wrapper{
-    display: flow-root;
+    display: flex;
     flex-flow: wrap;
     margin: auto;
   }
@@ -399,6 +395,10 @@ hr.footer-border{
   
   .modalblock{
     width: 300px;
+  }
+
+  .infoblock{
+    font-size: 1.1em;
   }
 }
 
@@ -487,6 +487,7 @@ hr.footer-border{
   .learnblock{
     width: 380px;
     margin: 4px;
+    color: var(--fedsim-blue1);
   }
 }
 
@@ -615,7 +616,7 @@ display: none;
   }
 
   .half-block {
-    width: 189px;
+    width: 180px;
     margin: 0;
   }
 }
