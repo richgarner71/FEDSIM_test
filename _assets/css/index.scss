@@ -1098,7 +1098,6 @@ hr.small-line{
 }
 
 .chart-btn{
-  width: 500px;
   height: 100px;
   margin: auto;
   padding: 20px;
@@ -1110,11 +1109,15 @@ hr.small-line{
   color: white;
 }
 
+.chart-btn{
+  width: 500px;
+  display: block;
+}
+
 
 @media screen and (max-width: 414px){
   .chart-btn{
-    width: 350px;
-    height: 80px;
+    display: none;
   }  
   
   .dialog{
@@ -1259,13 +1262,45 @@ li.input-li{
 }
 
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
  .half {
     width: 100%; 
     float: none;
     margin-bottom: 0; 
  }
 }
+
+// Tableau chart
+
+.tableauPlaceholder{
+  width: 800px!important;
+  height: 600px!important;
+}
+
+.tableauPlaceholder-m{
+  width: 375px!important;
+  height: 850px!important;
+}
+
+.mobile_tableau_chart, .tableauPlaceholder-m{
+  display: none;
+}
+
+@media screen and (max-width: 414px){
+  .tableauPlaceholder{
+    width: 375px!important;
+    height: 850px!important;
+  }
+  .mobile_tableau_chart{
+    display: flex;
+  }
+
+  .tableauPlaceholder-m{
+    display: block;
+  }
+}
+
+
 
 
 /* Clearfix */
