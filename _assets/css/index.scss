@@ -104,9 +104,19 @@ h5{
   display: block!important;
 }
 
-hr.highlight-line, hr.highlight-line-sm{
+hr.highlight-line, hr.highlight-line-sm, hr.media-line{
   border-top: 5px solid var(--fedsim-blue1);
   border-radius: 2px;
+}
+
+hr.media-line{
+  width: 700px;
+}
+
+@media screen and (max-width: 414px){
+  hr.media-line{
+    width: 300px;
+  }
 }
 
 .post-text{
