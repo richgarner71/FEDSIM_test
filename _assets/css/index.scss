@@ -848,6 +848,44 @@ circle {
 
 //Join Us sections
 
+.careerpath-banner{
+  display: block;
+}
+
+.careerpath-title{
+  display: none;
+}
+
+.careerpath-icon{
+  width: 25%; 
+  padding-top: 20px;
+}
+
+.careerpath-icon-PM{
+  padding-left: 80px;
+}
+
+.careerpath-block{
+  width: 75%
+}
+
+.careerpath-leftside{
+  width: 58%;
+}
+
+.careerpath-rightside{
+  width: 42%;
+  padding-left: 10px;
+}
+
+.careerpath-rightside h5{
+  margin-top: 10px;
+}
+
+.careerpath-wrapper-PM{
+  display: inline-block;
+}
+
 .icon-cell{
   width: 60px;
   display: contents;
@@ -879,6 +917,46 @@ circle {
 }
 
 @media screen and (max-width: 414px){
+
+  .careerpath-banner{
+    display: none;
+  }
+  
+  .careerpath-title{
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .careerpath-icon, .careerpath-icon-PM{
+    width: 25%; 
+    padding-top: 20px;
+  }
+  
+  .careerpath-block, .careerpath-block-PM{
+    width: 75%;
+  }
+
+  .careerpath-icon-PM{
+    padding-left: 0!important;
+  }
+  
+  .careerpath-leftside{
+    width: auto;
+  }
+  
+  .careerpath-rightside{
+    width: auto;
+  }
+  
+  .careerpath-rightside h5{
+    margin-top: 10px;
+  }
+
+  .careerpath-wrapper-PM{
+    display: flex;
+    flex-flow: row;
+  }
+
   .perks-half{
     display: flow-root;
     flex-flow: wrap;
