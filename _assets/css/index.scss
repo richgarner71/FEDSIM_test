@@ -274,6 +274,7 @@ hr.footer-border{
 }
 
 .usa-hero__callout{
+  min-width: 550px;
   background-color: white;
   border-radius: 15px;
   padding: 1rem 1rem 0.4rem 1rem;
@@ -284,10 +285,11 @@ hr.footer-border{
   color: var(--fedsim-blue1);
 }
 
-.usa-hero__heading{
-  font-family: "Garamond";
-  font-size: 2rem;
+.usa-hero__callout h2{
+  margin-block-start: 10px;
+  font-size: 1.85rem;
 }
+
 
 @media screen and (max-width: 414px){
   .usa-hero{
@@ -296,26 +298,19 @@ hr.footer-border{
   }
 
   .usa-hero__callout{
+    min-width: 300px;
     background-color: var(--fedsim-blue1);
-    color: white;
     border-radius: 15px;
     padding: 10px;
     margin: auto;
   }
 
-  .usa-hero__heading{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem;
+  .usa-hero__callout, .usa-hero__callout h2{
     color: white;
-    padding: 12px;
   }
 
 }
-@media screen and (min-width: 40em){
-  .usa-hero__callout{
-    min-width: 34rem;
-  }
-}
+
 
 //Blocks
 .flex-wrapper {
