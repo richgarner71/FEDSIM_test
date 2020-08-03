@@ -7,6 +7,15 @@ html{
 
 }
 
+a{
+  text-decoration: none;
+  color: var(--fedsim-blue3);
+}
+
+a:visited{
+  color: var(--fedsim-blue3);
+}
+
 /* FEDSIM COLORS */
 :root{
   --fedsim-blue1: #1D5187;
@@ -260,6 +269,11 @@ hr.footer-border{
   text-align: left; 
 }
 
+.logo-links{
+  background-color: var(--fedsim-litegrey);
+  padding: 10px;
+}
+
 @media screen and (max-width: 414px){
   .footer_side_left,
   .footer_side_right{
@@ -318,10 +332,17 @@ hr.footer-border{
   flex-flow: row nowrap;
 }
 
-.flex-wrapper-big{
-  width: 960px;
+.flex-wrapper-big, .flex-wrapper-full{
   margin: auto;
   display: flex;
+}
+
+.flex-wrapper-big{
+  width: 960px;
+}
+
+.flex-wrapper-full{
+  width: 1000px;
 }
 
 @media screen and (max-width: 768px){
@@ -331,8 +352,8 @@ hr.footer-border{
 }
 
 @media screen and (max-width: 414px){
-  .flex-wrapper-big{
-    width: 380px;
+  .flex-wrapper-big, .flex-wrapper-full{
+    width: 360px;
     flex-flow: column;
   }
 
@@ -870,7 +891,7 @@ circle {
 
 .careerpath-rightside{
   width: 42%;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .careerpath-rightside h5{
