@@ -270,8 +270,12 @@ hr.footer-border{
 }
 
 .logo-links{
-  background-color: var(--fedsim-litegrey);
   padding: 10px;
+}
+
+.footer-back{
+  width: 100vw;
+  background-color: var(--fedsim-litegrey);
 }
 
 @media screen and (max-width: 414px){
@@ -285,6 +289,7 @@ hr.footer-border{
 .usa-hero{
   background-image: asset_url("home.jpg");
   height: 500px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .usa-hero__callout{
@@ -301,7 +306,7 @@ hr.footer-border{
 
 .usa-hero__callout h2{
   margin-block-start: 10px;
-  font-size: 1.85rem;
+  font-size: 1.45rem;
 }
 
 
