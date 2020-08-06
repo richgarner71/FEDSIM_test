@@ -4,7 +4,6 @@
 
 html{
   font-family: "Montserrat", sans-serif;
-
 }
 
 a{
@@ -49,6 +48,10 @@ h4{
 
 h5{
   font-size: 1.2em;
+}
+
+p{
+  line-height: 1.5em;
 }
 
 @media screen and (max-width: 414px){
@@ -220,7 +223,8 @@ hr.media-line{
 }
 
 ::selection{
-  color: var(--fedsim-gold);
+  color: var(--fedsim-offwhite);
+  background-color: var(--fedsim-darkgrey);
 }
 
 @media screen and (max-width: 414px){
@@ -254,6 +258,7 @@ hr.footer-border{
 
 .usa-footer{
   line-height: 1.4rem;
+  font-size: 0.80rem;
 }
 
 .footer_side_left, .footer_side_right{
@@ -1045,6 +1050,7 @@ circle {
 .memberblock p, .memberblock-head p{
   margin-top: 6px;
   margin-bottom: 0;
+  line-height: 1.15em!important;
 }
 
 .member-pic{
@@ -1194,7 +1200,6 @@ hr.small-line{
 
 .dialog{
   max-width: 700px;
-  max-height: 680px;
 }
 
 .dialog-overlay[aria-hidden="true"],
@@ -1232,6 +1237,7 @@ hr.small-line{
   
   .dialog{
     overflow-y: scroll;
+    max-height: 100vh;
   }
 }
 
@@ -1248,7 +1254,6 @@ hr.small-line{
 }
 
 .events-block{
-  height: 320px;
   display: none;
   width: inherit;
   overflow-x: auto;
