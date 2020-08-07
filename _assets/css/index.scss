@@ -1199,6 +1199,10 @@ hr.small-line{
   max-width: 700px;
 }
 
+.dialog p{
+  line-height: 1.10em;
+}
+
 .dialog-overlay[aria-hidden="true"],
 .dialog[aria-hidden="true"] {
 	display: none;
