@@ -23,6 +23,7 @@ a:visited{
   --fedsim-blue4: #90CBE4;
   --fedsim-darkgrey: #424143;
   --fedsim-litegrey: #B3B4B4;
+  --fedsim-fedsimgrey: #f1f1f1;
   --fedsim-purple: #570A3B;
   --fedsim-pink: #AA839D;
   --fedsim-gold: #a38e4a;
@@ -247,6 +248,10 @@ hr.media-line{
 .usa-menu-btn{
   padding: 8px;
   margin: 10px;
+}
+
+input[type="search"]{
+  border-radius: 6px 0 0 6px;
 }
 
 //Footer styles
@@ -524,6 +529,7 @@ hr.footer-border{
 @media screen and (max-width: 414px){
   .learnblock{
     width: 380px;
+    height: auto;
     margin: 4px;
     color: var(--fedsim-blue1);
   }
@@ -532,6 +538,7 @@ hr.footer-border{
 @media screen and (max-width: 375px){
   .learnblock{
     width: 355px;
+    height: auto;
     margin: 4px;
   }
 }
@@ -1025,7 +1032,7 @@ circle {
 }
 
 .memberblock, .memberblock-head{
-  background-color: var(--fedsim-litegrey);
+  background-color: var(--fedsim-fedsimgrey);
   color: var(--fedsim-darkgrey);
   font-size: 0.8em;
   font-weight: 600;
@@ -1077,8 +1084,8 @@ circle {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-color: var(--fedsim-litegrey);
-  border: 4px solid var(--fedsim-litegrey);
+  background-color: var(--fedsim-fedsimgrey);
+  border: 4px solid var(--fedsim-fedsimgrey);
   height: 280px;
   display: inline-table;
   margin: auto;
