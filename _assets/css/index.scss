@@ -158,7 +158,7 @@ hr.media-line{
 }
 
 .section-btn:hover{
- background-color: var(--fedsim-blue2);
+ background-color: var(--fedsim-blue3);
 }
 
 .section-btn a, .section-btn a:hover{
@@ -344,6 +344,11 @@ hr.footer-border{
 
 
 //Blocks
+.grid-wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
@@ -368,7 +373,12 @@ hr.footer-border{
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 375px){
+  .grid-wrapper{
+    display: grid;
+    margin: auto;
+  }
+  
   .flex-wrapper-big, .flex-wrapper-full{
     width: 360px;
     flex-flow: column;
@@ -448,6 +458,7 @@ hr.footer-border{
 .darkblock, .darkblock-alt{
   color: white;
   background-color: var(--fedsim-blue1);
+  margin-bottom: 12px;
 }
 
 .darkblock{
@@ -512,7 +523,7 @@ hr.footer-border{
 
 @media screen and (max-width: 414px){
   .fourth-block{
-    width: 380px;
+    width: 355px;
     margin: 4px;
   }
 
@@ -662,7 +673,7 @@ display: none;
 
   .half-block {
     width: 180px;
-    margin: 0;
+    margin-bottom: 12px;
   }
 }
 
@@ -1362,7 +1373,7 @@ li.input-li{
  }
 
  #input-submit:hover{
-   background: var(--fedsim-blue2);
+   background: var(--fedsim-blue3);
  }
 
  .input-text{
