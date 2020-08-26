@@ -94,8 +94,6 @@ primary_navigation:
         url: /industry/
       - name: FIAC
         url: /fiac/
-  - name: Media
-    url: /media/
   - name: Contact Us
     url: /contact/
 
