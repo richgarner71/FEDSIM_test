@@ -138,7 +138,11 @@ hr.media-line{
 }
 
 .sidepadded{
-  padding: 0 20px;
+  padding: 0 20px!important;
+}
+
+.noPadding{
+  padding: 0!important;
 }
 
 .section-btn{
@@ -231,6 +235,19 @@ hr.media-line{
 @media screen and (max-width: 414px){
   .no-mobile{
     display: none!important;
+  }
+}
+
+//Video styles
+iframe.vidThumb{
+  width: 500px;
+  height: 281px;
+}
+
+@media screen and (max-width: 414px){
+  iframe.vidThumb{
+    width: 350px;
+    height: 197px;
   }
 }
 
@@ -377,7 +394,13 @@ hr.footer-border{
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
+  .flex-wrapper-big{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 414px){
   .grid-wrapper{
     display: grid;
     margin: auto;
