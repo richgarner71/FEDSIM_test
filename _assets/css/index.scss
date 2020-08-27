@@ -431,7 +431,7 @@ hr.footer-border{
 }
 
 
-.infoblock, .darkblock, .darkblock-alt{
+.infoblock, .infoblock-fixed, .darkblock, .darkblock-alt{
   text-align: center;
 }
 
@@ -439,7 +439,7 @@ hr.footer-border{
   text-align: left;
 }
 
-.infoblock, .modalblock{
+.infoblock, .infoblock-fixed, .modalblock{
   display: flow-root;
   color: var(--fedsim-blue1);
   background-color: white;
@@ -485,8 +485,19 @@ hr.footer-border{
     width: 300px;
   }
 
-  .infoblock{
+  .infoblock, .infoblock-fixed{
     font-size: 1.1em;
+  }
+
+  .infoblock-fixed{
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 375px){
+
+  .infoblock-fixed{
+    width: 360px;
   }
 }
 
@@ -1405,38 +1416,6 @@ li.input-li{
     margin-bottom: 0; 
  }
 }
-
-// Tableau chart
-
-.tableauPlaceholder{
-  width: 800px!important;
-  height: 600px!important;
-}
-
-.tableauPlaceholder-m{
-  width: 375px!important;
-  height: 850px!important;
-}
-
-.mobile_tableau_chart, .tableauPlaceholder-m{
-  display: none;
-}
-
-@media screen and (max-width: 414px){
-  .tableauPlaceholder{
-    width: 375px!important;
-    height: 850px!important;
-  }
-  .mobile_tableau_chart{
-    display: flex;
-  }
-
-  .tableauPlaceholder-m{
-    display: block;
-  }
-}
-
-
 
 
 /* Clearfix */

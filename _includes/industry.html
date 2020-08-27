@@ -1,124 +1,47 @@
-<div class="flex-wrapper-big">
-    <div class="infoblock with-side-buffer">
-        <h2>Industry</h2>
-        <p>FEDSIM pursues ongoing communication with industry leaders by providing relevant opportunities and creating forums to further dialogue. </p>
+<div class="flex-wrapper-big infoblock">
+    <h2>Industry</h2>
+</div>
 
+<div class="flex-wrapper-big">
+    <div class="one-fourth">
+        <div class="bio-spacer"></div>
+    </div>
+    
+    <div class="one-fourth section-btn">
+        <a href="#opportunities"><b>Opportunities</b></a>
+    </div>
+
+    <div class="one-fourth section-btn">
+        <a href="#toolkit"><b>Industry Toolkit</b></a>
+    </div>
+
+    <div class="one-fourth">
+        <div class="bio-spacer"></div>
+    </div>
+</div>
+
+<div class="v-buffer"><br></div>
+
+<div class="flex-wrapper-big">
+    <div id="opportunities" class="infoblock-fixed darkblock">
+        <h2 class="whitetext">Opportunities</h2>
+        <p>Active procurements listed are in the stage of collecting requirements and solicitation development with the client. All official notifications will be transmitted via eBuy. For updates, visit our Leadership page to identify the designated point of contact. </p>
+        
+        {% asset chart.png alt="Opportunities Chart" %}
+        
+        <p>Partnership opportunities with private sector clients are critical for FEDSIM's ongoing development and understanding of the private sector. Throughout our evolution, FEDSIM has maintained an open, mutually beneficial relationship with industry partners based on transparency and clear communication. </p>      
+    </div>
+</div>
+
+<div class="flex-wrapper-big">
+    <div id="toolkit" class="infoblock-fixed withborder">
+        <h2>Industry Toolkit</h2>
+        <p>FEDSIM pursues ongoing communication with industry leaders by providing relevant opportunities and creating forums to further dialogue. </p>
+   
         <h4>FEDSIM Due Diligence for Industry Partners</h4>
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/y4PtAs0LPKs" frameborder="0" aria-label="FEDSIM Due Diligence for Industry Partners"
+        <iframe class="vidThumb" src="https://www.youtube.com/embed/y4PtAs0LPKs" frameborder="0" aria-label="FEDSIM Due Diligence for Industry Partners"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <hr class="highlight-line">
-
-        <h2>Partnerships</h2>
-        <p>Partnership opportunities with private sector clients are critical for FEDSIM's ongoing development and understanding of the private sector. Throughout our evolution, FEDSIM has maintained an open, mutually beneficial relationship with industry partners based on transparency and clear communication. </p>
-        
-        <hr class="highlight-line">
-
-        <h2>Opportunities</h2>
-        <p>Active procurements listed are in the stage of collecting requirements and solicitation development with the client. All official notifications will be transmitted via eBuy. For updates, visit our Leadership page to identify the designated point of contact. </p>
-        <p style="font-weight: bold;">Disclaimer: These opportunities are subject to change.</p>
-    
-        <div class="chart-btn" onclick="javascript:openBio('T_Popup_chart');">
-        <h4>Click HERE for Current Opportunities</h4>
-        </div>
     </div>
 </div>
 
-<!-- popup chart -->
-<div id="T_Popup_chart" class="dialog-overlay" aria-hidden="true">
-    <div class="dialog-wide" role="dialog" onclick="javascript:closeBio();">
-        <div class="modalblock">
-            <!-- begin Tableau chart -->
-            <div class='tableauPlaceholder' id='viz1595761424588' style='position: relative'>
-                <noscript>
-                    <a href='#'>
-                        <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEDSIMAcquisitionDashboarditan&#47;ActiveProcurements&#47;1_rss.png' 
-                        style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz'  style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                    <param name='embed_code_version' value='2' /> 
-                    <param name='site_root' value='' />
-                    <param name='name' value='FEDSIMAcquisitionDashboarditan&#47;ActiveProcurements' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='no' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEDSIMAcquisitionDashboarditan&#47;ActiveProcurements&#47;1.png' /> 
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en' />
-                </object>
-            </div>                
-            <script type='text/javascript'>
-                                var divElement = document.getElementById('viz1595761424588');
-                                var vizElement = divElement.getElementsByTagName('object')[0];
-                                vizElement.style.width='800px';
-                                vizElement.style.height='600px';
-                                var scriptElement = document.createElement('script');                    
-                                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-            </script>
-            <!-- end Tableau chart -->
-            <p style="font-style: italic; font-weight: bold;">Click here to close this box.</p>
-            
-        </div>
-    </div>
-</div>
-
-<!-- mobile chart -->
-<div id="mobile_tableau_chart" class="flex-wrapper">
-    <!-- begin Tableau chart -->
-    <div class='tableauPlaceholder-m' id='viz1595762212485' style='position: relative'>
-        <noscript>
-            <a href='#'>
-                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEDSIMAcquisitions-Mobile&#47;ActiveProcurements&#47;1_rss.png' 
-                style='border: none' />
-            </a>
-        </noscript>
-    <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-        <param name='embed_code_version' value='2' /> 
-        <param name='site_root' value='' />
-        <param name='name' value='FEDSIMAcquisitions-Mobile&#47;ActiveProcurements' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='no' />
-        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEDSIMAcquisitions-Mobile&#47;ActiveProcurements&#47;1.png' /> 
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en' />
-    </object>
-</div>                
-<script type='text/javascript'>                    
-    var divElement = document.getElementById('viz1595762212485');                    
-    var vizElement = divElement.getElementsByTagName('object')[0];                    
-    vizElement.style.width='375px';
-    vizElement.style.height='850px';                    
-    var scriptElement = document.createElement('script');                    
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-</script>
-    <!-- end Tableau chart -->
-</div>
-
-<script type="text/javascript">
-
-    function openBio(thisInfo)
-    {
-        document.getElementById(thisInfo).setAttribute("aria-hidden", "false");
-    }
-
-    function closeBio()
-    {
-        var elements = document.getElementsByClassName("dialog-overlay");
-        for (var i = 0; i < elements.length; i++){
-            elements[i].setAttribute("aria-hidden", "true");
-        }
-    }
-
-</script>
