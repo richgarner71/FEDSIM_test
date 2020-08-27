@@ -930,33 +930,12 @@ circle {
 }
 
 .careerpath-icon{
-  width: 25%; 
+  width: 150px;
   padding-top: 20px;
 }
 
-.careerpath-icon-PM{
-  padding-left: 80px;
-}
-
 .careerpath-block{
-  width: 75%
-}
-
-.careerpath-leftside{
-  width: 58%;
-}
-
-.careerpath-rightside{
-  width: 42%;
-  padding-left: 30px;
-}
-
-.careerpath-rightside h5{
-  margin-top: 10px;
-}
-
-.careerpath-wrapper-PM{
-  display: inline-block;
+  width: 350px
 }
 
 .icon-cell{
@@ -996,34 +975,14 @@ circle {
     margin-bottom: 10px;
   }
   
-  .careerpath-icon, .careerpath-icon-PM{
+  .careerpath-icon{
     width: 25%; 
     padding-top: 20px;
   }
   
-  .careerpath-block, .careerpath-block-PM{
+  .careerpath-block{
     width: 75%;
-  }
-
-  .careerpath-icon-PM{
-    padding-left: 0!important;
-  }
-  
-  .careerpath-leftside{
-    width: auto;
-  }
-  
-  .careerpath-rightside{
-    width: auto;
-  }
-  
-  .careerpath-rightside h5{
-    margin-top: 10px;
-  }
-
-  .careerpath-wrapper-PM{
-    display: flex;
-    flex-flow: row;
+    padding-right: 5px;
   }
 
   .perks-half{
