@@ -1318,6 +1318,13 @@ hr.small-line{
 //Contact Us form
 #gform{
   font-size: 1.2em;
+  width: 1000px;
+}
+
+@media screen and (max-width: 414px){
+  #gform{
+    width: 375px;
+  }
 }
 
 .error-msg{
