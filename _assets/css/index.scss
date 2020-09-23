@@ -1271,10 +1271,25 @@ hr.small-line{
 
 //Industry and Opportunities
 
-iframe.opp_frame{
-  width: 900px;
-  height: 800px;
+#opp{
+  display: block!important;
 }
+
+#opp_m{
+  display: none!important;
+}
+
+@media screen and (max-width: 414px)
+{
+  #opp{
+    display: none!important;
+  }
+  
+  #opp_m{
+    display: block!important;
+  }
+}
+
 
 //FIAC Events and Registration
 
