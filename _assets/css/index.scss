@@ -1271,9 +1271,14 @@ hr.small-line{
 
 //Industry and Opportunities
 
-iframe.frame_opp, iframe.frame_due, iframe.frame_day{
+iframe.frame_opp{
   width: 900px;
-  height: 750px;
+  height: 700px;
+}
+
+iframe.frame_due, iframe.frame_day{
+  width: 900px;
+  height: 350px;
 }
 
 //FIAC Events and Registration
