@@ -69,6 +69,10 @@ p{
   }
 }
 
+img{
+	-webkit-transform: translateZ(0); 
+	transform: translateZ(0);
+}
 
 
 //General stylings
@@ -740,7 +744,7 @@ display: none;
 .proj-3{  background-image: asset-url("proj-3.png"); }
 .proj-4{  background-image: asset-url("proj-4.png"); }
 .proj-5{  background-image: asset-url("proj-5.png"); }
-.proj-6{  background-image: asset-url("proj-6.png"); }
+.proj-6{  background-image: asset-url("proj-6a.png"); }
 .proj-7{  background-image: asset-url("07_RSC.png"); }
 .proj-8{  background-image: asset-url("08_DOD.png"); }
 
