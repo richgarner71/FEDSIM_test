@@ -1,6 +1,6 @@
 // Import the US Web Design System SASS.
 
-@import "uswds";
+@forward "uswds";
 
 html{
   font-family: "Montserrat", sans-serif;
@@ -301,12 +301,12 @@ iframe.vidThumb, object.videoObj{
 
 //Header styles
 
-.usa-nav__primary button[aria-expanded="false"] span::after{
+.usa-nav__primary button[aria-expanded="false"] span::after, .usa-banner__button::after {
 	background: 0 0;
 	background-color: none !important;
 
-  mask: url(expand_more.svg) no-repeat center/contain !important;
-  -webkit-mask: url(expand_more.svg) no-repeat center/contain !important;
+  mask: url("./img/usa-icons/expand_more.svg") no-repeat center/contain !important;
+  -webkit-mask: url("./img/usa-icons/expand_more.svg") no-repeat center/contain !important;
 }
 
 .usa-banner__inner {
