@@ -301,12 +301,12 @@ iframe.vidThumb, object.videoObj{
 
 //Header styles
 
-.usa-banner__button::after, .usa-nav__primary button:after{
+.usa-nav__primary button[aria-expanded="false"] span::after{
 	background: 0 0;
 	background-color: none !important;
 
-  mask: url("./img/usa-icons/expand_more.svg") no-repeat center/contain;
-  -webkit-mask: url("./img/usa-icons/expand_more.svg") no-repeat center/contain;
+  mask: url(expand_more.svg) no-repeat center/contain !important;
+  -webkit-mask: url(expand_more.svg) no-repeat center/contain !important;
 }
 
 .usa-banner__inner {
