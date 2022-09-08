@@ -14,7 +14,7 @@ gem 'github-pages'
 gem "jekyll", "~> 3.7"
 
 # See https://github.com/envygeeks/jekyll-assets/issues/622
-gem "sprockets", "~> 3.7"
+gem "sprockets", "~> 4.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
