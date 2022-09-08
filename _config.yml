@@ -200,7 +200,12 @@ assets:
     - node_modules/@uswds/uswds/dist/scss
     - node_modules/@uswds/uswds/dist/theme
     - node_modules/netlify-cms/dist
+    - _assets/css
     - _assets/img
     - _assets/img/favicons
     - _assets/img/members
+    - _assets/img/usa-icons
+    - _assets/img/uswds-icons
+    - _assets/img/material-icons
+    - _assets/img/material-icons-deprecated
     - _assets/fonts
