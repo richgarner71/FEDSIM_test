@@ -18,7 +18,6 @@ uswds.paths.dist.img = "./assets/img";
 uswds.paths.dist.fonts = "./assets/fonts";
 uswds.paths.dist.js = "./assets/js";
 uswds.paths.dist.css = "./assets/css";
-uswds.paths.dist.sass = "./assets/sass";
 uswds.sprite.projectIconsOnly = false;	
 
 

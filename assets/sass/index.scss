@@ -1,5 +1,6 @@
 // Import the US Web Design System SASS.
 
+@forward "uswds-theme";
 @forward "uswds";
 
 html{
@@ -372,7 +373,7 @@ a.external_link::after{
 
 //Callout styles
 .usa-hero{
-  background-image: url(home.jpg);
+  background-image: url(./img/home.jpg)!important;
   height: 500px;
   font-family: "Montserrat", sans-serif;
 }

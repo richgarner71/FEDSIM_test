@@ -13,12 +13,11 @@ uswds.settings.version = 3;
  * Set as many as you need
  */
 
-uswds.paths.dist.theme = "./sass";
+uswds.paths.dist.theme = "./assets/sass";
 uswds.paths.dist.img = "./assets/img";
 uswds.paths.dist.fonts = "./assets/fonts";
 uswds.paths.dist.js = "./assets/js";
 uswds.paths.dist.css = "./assets/css";
-uswds.paths.dist.sass = "./sass";
 uswds.sprite.projectIconsOnly = false;	
 
 
