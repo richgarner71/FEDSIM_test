@@ -19,7 +19,7 @@ uswds.paths.dist.fonts = "./assets/fonts";
 uswds.paths.dist.js = "./assets/js";
 uswds.paths.dist.css = "./assets/css";
 uswds.sprite.projectIconsOnly = false;	
-
+uswds.paths.dist.sass = "./_assets/css";
 
 /**
  * Exports
