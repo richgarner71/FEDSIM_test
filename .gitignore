@@ -5,4 +5,5 @@ node_modules
 .bundle
 .jekyll-cache/
 ~/.rbenv/
-_assets/css/index.scss.old
+package-lock.json
+package.json
