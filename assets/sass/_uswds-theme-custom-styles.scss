@@ -21,3 +21,10 @@ i.e.
 */
 
 @use "uswds-core" as *;
+
+
+@use "uswds-core" with (
+   $theme-font-path: "./fonts",
+   $theme-image-path: "./img"
+ );
+

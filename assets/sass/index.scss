@@ -302,6 +302,20 @@ iframe.vidThumb, object.videoObj{
 
 //Header styles
 
+.usa-nav__primary button[aria-expanded=false] span::after {
+  background: 0 0;
+  background-color: --fedsim-darkgrey;
+  -webkit-mask: url(./img/usa-icons/expand_more.svg) no-repeat center/contain !important;
+  mask: url(./img/usa-icons/expand_more.svg) no-repeat center/contain !important;
+}
+
+.usa-nav__primary button[aria-expanded=true] span::after {
+  background: 0 0;
+  background-color: white;
+  -webkit-mask: url(./img/usa-icons/expand_less.svg) no-repeat center/contain !important;
+  mask: url(./img/usa-icons/expand_less.svg) no-repeat center/contain !important;
+}
+
 .usa-banner__inner {
   display: block;
   padding-left: 20px;
@@ -313,6 +327,10 @@ iframe.vidThumb, object.videoObj{
 
 .usa-banner__lock-image{
   background-color: #f0f0f0;
+}
+
+.usa-banner__button::after, .usa-banner__button:hover::after{
+  position: relative;
 }
 
 .usa-menu-btn{
@@ -367,8 +385,8 @@ hr.footer-border{
 a.external_link::after{
   background: 0 0;
   background-color: white;
-  mask: url(launch.svg) no-repeat center/contain;
-  -webkit-mask: url(launch.svg) no-repeat center/contain;
+  mask: url(./img/usa-icons/launch.svg) no-repeat center/contain;
+  -webkit-mask: url(./img/usa-icons/launch.svg) no-repeat center/contain;
 }
 
 //Callout styles
@@ -675,12 +693,12 @@ a.external_link::after{
 }
 
 .learn-gov{
-  background-image: asset-url("cso1.png");
+  background-image: url(./img/cso1.png);
   background-color: var(--fedsim-blue1);
 }
 
 .learn-ind{
-  background-image: asset-url("cso2.png");
+  background-image: url(./img/cso2.png);
   background-color: var(--fedsim-darkgrey);
 }
 
@@ -789,14 +807,14 @@ display: none;
 .color-back-grey{ background-color: var(--fedsim-darkgrey); }
 
 
-.proj-1{  background-image: asset-url("proj-1.jpg"); }
-.proj-2{  background-image: asset-url("proj-2.jpg"); }
-.proj-3{  background-image: asset-url("proj-3.jpg"); }
-.proj-4{  background-image: asset-url("proj-4.jpg"); }
-.proj-5{  background-image: asset-url("proj-5.jpg"); }
-.proj-6{  background-image: asset-url("proj-6-a.jpg"); }
-.proj-7{  background-image: asset-url("proj-5.jpg"); }
-.proj-8{  background-image: asset-url("proj-8.jpg"); }
+.proj-1{  background-image: url(./img/proj-1.jpg); }
+.proj-2{  background-image: url(./img/proj-2.jpg); }
+.proj-3{  background-image: url(./img/proj-3.jpg); }
+.proj-4{  background-image: url(./img/proj-4.jpg); }
+.proj-5{  background-image: url(./img/proj-5.jpg); }
+.proj-6{  background-image: url(./img/proj-6-a.jpg); }
+.proj-7{  background-image: url(./img/proj-5.jpg); }
+.proj-8{  background-image: url(./img/proj-8.jpg); }
 
 
 
@@ -1331,7 +1349,7 @@ hr.small-line{
   height: 100px;
   margin: auto;
   padding: 20px;
-  background-image: asset-url("chart.png");
+  background-image: asset-url("./img/chart.png");
   border: 2px solid var(--fedsim-blue1);
 }
 

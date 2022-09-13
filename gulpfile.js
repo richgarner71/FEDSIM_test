@@ -14,12 +14,13 @@ uswds.settings.version = 3;
  */
 
 uswds.paths.dist.theme = "./assets/sass";
-uswds.paths.dist.img = "./assets/img";
-uswds.paths.dist.fonts = "./assets/fonts";
-uswds.paths.dist.js = "./assets/js";
-uswds.paths.dist.css = "./assets/css";
+uswds.paths.dist.css = "./_assets/css";
+
+uswds.paths.dist.img = "./_assets/img";
+uswds.paths.dist.fonts = "./_assets/fonts";
+uswds.paths.dist.js = "./_assets/js";
+
 uswds.sprite.projectIconsOnly = false;	
-uswds.paths.dist.sass = "./_assets/css";
 
 /**
  * Exports
