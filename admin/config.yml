@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: RichGarner71/FEDSIM_test
-  base_url: https://pages.cloud.gov
+  repo: 18f/federalist-uswds-jekyll
+  base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
-  preview_context: pages/build
+  preview_context: federalist/build
   branch: master
   use_graphql: true
 

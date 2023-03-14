@@ -303,14 +303,12 @@ iframe.vidThumb, object.videoObj{
 //Header styles
 
 .usa-nav__primary button[aria-expanded=false] span::after {
-  background: 0 0;
   background-color: --fedsim-darkgrey;
   -webkit-mask: url(./img/usa-icons/expand_more.svg) no-repeat center/contain !important;
   mask: url(./img/usa-icons/expand_more.svg) no-repeat center/contain !important;
 }
 
 .usa-nav__primary button[aria-expanded=true] span::after {
-  background: 0 0;
   background-color: white;
   -webkit-mask: url(./img/usa-icons/expand_less.svg) no-repeat center/contain !important;
   mask: url(./img/usa-icons/expand_less.svg) no-repeat center/contain !important;
@@ -323,6 +321,17 @@ iframe.vidThumb, object.videoObj{
 
 .usa-navbar{
   height: 5rem;
+}
+
+.usa-nav__submenu{
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 8px;
+  background-color: #162e51;
+  width: 15rem;
+  position: absolute;
+  z-index: 400;
 }
 
 .usa-banner__lock-image{
@@ -810,10 +819,10 @@ display: none;
 .proj-1{  background-image: url(./img/proj-1.jpg); }
 .proj-2{  background-image: url(./img/proj-2.jpg); }
 .proj-3{  background-image: url(./img/proj-3.jpg); }
-.proj-4{  background-image: url(./img/proj-4.jpg); }
+.proj-4{  background-image: url(./img/proj-10.jpg); }
 .proj-5{  background-image: url(./img/proj-5.jpg); }
-.proj-6{  background-image: url(./img/proj-6-a.jpg); }
-.proj-7{  background-image: url(./img/proj-5.jpg); }
+.proj-6{  background-image: url(./img/proj-11.jpg); }
+.proj-7{  background-image: url(./img/proj-9alt.jpg); }
 .proj-8{  background-image: url(./img/proj-8.jpg); }
 
 
@@ -1398,7 +1407,7 @@ hr.small-line{
 
 .d2d_frame{
   width: 940px;
-  height: 500px;
+  height: 880px;
 }
 
 .d2d_frame_m{
