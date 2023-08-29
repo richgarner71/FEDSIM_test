@@ -7,3 +7,7 @@ node_modules
 ~/.rbenv/
 package-lock.json
 package.json
+
+assets/uswds/*
+!assets/uswds/.gitkeep
+assets/js/uswds*

@@ -1,4 +1,4 @@
-ruby '>= 2.5.7'
+ruby '>= 3.1'
 
 source 'https://rubygems.org'
 gem 'github-pages'
@@ -23,7 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate-v2', "3.0.0"  
   gem 'jekyll-sitemap'
   gem 'jekyll-seo-tag'
-  gem "jekyll-assets", "~> 3.0", group: :jekyll_plugins
+  gem 'jekyll-autoprefixer'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -33,3 +33,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "html-proofer", "~> 3.15"
+
